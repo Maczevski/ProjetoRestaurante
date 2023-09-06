@@ -1,3 +1,2 @@
 # ProjetoRestaurante
-# jurema hehehhe
-# oie 
+# jurema  
