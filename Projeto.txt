@@ -1,0 +1,2 @@
+Sistema Fictício de Gestão de Restaurante Visão Geral:
+ O sistema de gestão de restaurante tem como objetivo auxiliar os proprietários e funcionários no gerenciamento eficiente das operações diárias, permitindo o controle de pedidos, estoque, funcionários e finanças.
