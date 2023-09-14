@@ -1,9 +1,13 @@
 body{
     background-color: #0d192b;
     font-family:monospace;
+    margin: 0;
+    padding: 0;
 }
 
+
 .Titulo{
+        margin-top: 30px;
         color: #07f9a2;
 }
 
@@ -11,7 +15,8 @@ body{
 .menu-navegacao {
     background-color: #081324;
     color: #07f9a2;
-    padding: 10px;
+    padding: 12px;
+    left: 0%;
 }
 
 .menu-navegacao ul {
@@ -66,6 +71,13 @@ body{
     text-align: center;
 }
 
+.nome-produto{
+    padding: 5px;
+}
+
+.container-tabela{
+    margin-top: 30px;
+}
 
 .tabela-estoque{
     color:#07f9a2;
@@ -89,7 +101,8 @@ body{
 }
 
 .container {
-    text-align: center; /* Alinha o conteúdo no centro horizontal */
+    margin-top: 30px;
+    text-align: center; 
 }
 
 .botao-estoque{
@@ -97,4 +110,89 @@ body{
     background-color: #0d192b;
     width: 200px;
     height: 40px;
+    cursor: pointer;
+  
+   
 }
+
+
+
+/* Estilos para a janela modal */
+.janela-estoque {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(5, 14, 27, 0.71);
+}
+
+/* Estilos para o conteúdo da janela modal */
+.janela-conteudo {
+    background-color: #07f9a2;
+    padding: 50px;
+    border: 1px solid #8b8b8b;
+    max-width: 600px; /* Adicione uma largura máxima para evitar que a janela fique muito larga */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2%;
+}
+
+
+/* Estilos para o campo de entrada e títulos */
+.inserir-produto {
+    background-color: #a9ffe0;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #0d192b;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/* Estilos para os títulos */
+.sub-janela {
+    text-align: left;
+    font-weight: bold;
+    font-size: large;
+}
+
+.botaoAdicionarProduto{
+    margin-top: 10px;
+    color: #07f9a2;
+    background-color: #0c5149;
+    border: 1px solid #081324;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+
+/* Estilos para o botão "fechar" */
+.fechar {
+    color: #0d192b;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+

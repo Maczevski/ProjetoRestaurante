@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,18 +15,19 @@
                 <a href="#">Menu</a>
                 <ul class="dropdown-content">
                     <li><a href="#">Teste</a></li>
+                    <li><a href="#">Teste</a></li>
+                    <li><a href="#">Teste</a></li>
+                    <li><a href="#">Teste</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
    
-    <pr><br></pr>
     <h2 class="Titulo" style="text-align: center;">
         Controle de estoque
     </h2> 
-    <p><br><br></p>
 
-    <table class="tabela-estoque">
+    <div class="container-tabela"><table class="tabela-estoque">
         <thead>
             <tr>
                 <th>Produto</th>
@@ -50,12 +51,34 @@
                 <td class="nome-produto">NomeProduto</td>
                 <td class="quantidade"><input class="table-content" type="number" value="4" min="0"></td>
             </tr>
+            <tr>
+                <td class="nome-produto">NomeProduto</td>
+                <td class="quantidade"><input class="table-content" type="number" value="5" min="0"></td>
+            </tr>
+            
         </tbody>
-    </table>
-    <pr><br></pr>
+    </table></div>
     <div class="container">
-        <button class="botao-estoque">+ Adicionar produto</button>
+         <button id="adicionar-produto" class="botao-estoque">+ Adicionar produto</button>
     </div>
-        
+
+    <!-- O modal -->
+    <div id="myModal" class="janela-estoque">
+        <!-- Conteúdo do modal -->
+        <div class="janela-conteudo">
+            <span class="fechar">&times;</span>
+            <h2>Adicionar novo item ao estoque</h2>
+            <h4 class="sub-janela">Nome</h4>
+            <input class="inserir-produto" type="text" id="campoNome" placeholder="Digite o nome do produto">
+            <h4 class="sub-janela">Quantidade</h4>
+            <input class="inserir-produto" type="number" min="0" id="campoNome" placeholder="Digite a quantidade do produto">
+            <button class="botaoAdicionarProduto" id="botaoAdicionarProduto">Adicionar produto</button>
+          
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+       
+    
 </body>
 </html>
