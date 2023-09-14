@@ -1,0 +1,100 @@
+body{
+    background-color: #0d192b;
+    font-family:monospace;
+}
+
+.Titulo{
+        color: #07f9a2;
+}
+
+/* Estilizando o menu de navegação */
+.menu-navegacao {
+    background-color: #081324;
+    color: #07f9a2;
+    padding: 10px;
+}
+
+.menu-navegacao ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-navegacao ul li {
+    color: #07f9a2;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.menu-navegacao ul li a {
+    text-decoration: none;
+    color: #d7fff0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#0c5149;
+    min-width: 100px;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Mostrar o dropdown quando passar o mouse sobre o item do menu */
+.menu-navegacao ul li:hover .dropdown-content {
+    display: block;
+}
+.table-content{
+    background-color: #0d192b;
+    color: white;
+    text-align: center;
+}
+
+.quantidade{
+    text-align: center;
+}
+
+
+.tabela-estoque{
+    color:#07f9a2;
+    border: 1px solid#07f9a2;
+    border-collapse: collapse;
+    margin: auto;
+
+}
+
+.tabela-estoque td{
+    border: 1px solid#07f9a2;
+    height: 30px;
+}
+
+.tabela-estoque th{
+    border: 1px solid#07f9a2;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+
+}
+
+.container {
+    text-align: center; /* Alinha o conteúdo no centro horizontal */
+}
+
+.botao-estoque{
+    color: #07f9a2;
+    background-color: #0d192b;
+    width: 200px;
+    height: 40px;
+}
