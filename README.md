@@ -1,3 +1,3 @@
 # ProjetoRestaurante
-# gestão de funcionaios e gestão do menu
+# gestão de funcionarios e gestão do menu
 
