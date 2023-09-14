@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Valorante</title>
+    <style>
+        /* Estilos de cores */
+        .color1 { background-color: #07f9a2; }
+        .color2 { background-color: #09c184; }
+        .color3 { background-color: #0a8967; }
+        .color4 { background-color: #0c5149; }
+        .color5 { background-color: #0d192b; }
+        
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            padding: 20px;
+            text-align: center;
+            color: rgb(24, 5, 5);
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(244, 10, 10);
+            padding: 10px 20px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        /* Estilos da página de login */
+        .login-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            background-color: #10eea4;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #048455;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* Estilos do menu principal */
+        .menu-options {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .menu-option {
+            background-color: #09c184;
+            padding: 20px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            flex: 1;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .centralize-right {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body class="color1">
+    <header class="color2">
+        <h1>Restaurante Valorante</h1>
+    </header>
+
+    <!-- Página de login -->
+    <div class="login-page">
+        <div class="login-box">
+            <h2>Faça login</h2>
+            <input type="text" class="login-input" placeholder="Usuário">
+            <input type="password" class="login-input" placeholder="Senha">
+            <button class="login-button" onclick="login()">Entrar</button>
+        </div>
+    </div>
+
+    <!-- Menu principal (inicialmente oculto) -->
+    <div class="content" style="display: none;">
+        <h2>Menu Principal</h2>
+        <div class="menu-options">
+            <div class="menu-option color3">
+                <h3>Controle de Estoque</h3>
+            </div>
+            <div class="menu-option color4">
+                <h3>Controle de Pedidos</h3>
+            </div>
+            <div class="menu-option color5">
+                <h3>Funcionários</h3>
+            </div>
+            <div class="menu-option color1">
+                <h3>Finanças</h3>
+            </div>
+        </div>
+       
+        <div  class="centralize-right"> 
+        <footer>
+        <button class="centralize-right menu-option color1"  onclick="logout()">Sair</button>
+    </footer>   
+    </div>
+</div>
+
+    <script>
+        // Função para simular login (aqui você implementaria a autenticação real)
+        function login() {
+            // Verifique se o login é válido
+            // Neste exemplo, apenas mostraremos o menu após o "login"
+            document.querySelector('.login-page').style.display = 'none';
+            document.querySelector('.content').style.display = 'block';
+        }
+
+        // Função para fazer logout
+        function logout() {
+            document.querySelector('.content').style.display = 'none';
+            document.querySelector('.login-page').style.display = 'flex';
+        }
+    </script>
+</body>
+</html>
