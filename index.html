@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro de funcionario</title>
+ <!-- Bootstrap CSS  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <button type="button" class="btn btn-primary">Restaurante Valorant</button>
+          
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                menu
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">cadastro de funcionario</a></li>
+                <li><a class="dropdown-item" href="#">sair</a></li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="my-5">cadastro de funcionario</h1>
+        <!--Imagen-->
+        <div class="row">
+            <div class="col-md-6">
+                <img src="assets/img/undraw_group_hangout_re_4t8r.svg" alt="">
+            </div>
+            <div class="col-md-6">
+
+                <form>
+                    <div class="mb-3">
+                        <label for="codigo" class="form-label">Código de Registro</label>
+                        <input type="number" class="form-control" id="codigo" placeholder="0000" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Ex:Regina" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="sobrenome" class="form-label">Sobrenome</label>
+                        <input type="text" class="form-control" id="sobrenome" placeholder="Ex:Pereira Da Silva" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="genero" class="form-label">Gênero</label>
+                        <select class="form-control" id="genero" required>
+                            <option value="Mulher">Mulher</option>
+                            <option value="Homem">Homem</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="data" class="form-label">Data de nacismento</label>
+                        <input type="date" class="form-control" id="data" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="CPF">CPF</label>
+                        <input  id="CPF" type="text" name="CPF" placeholder="***.***.***-**" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="RG">RG</label>
+                        <input  id="RG" type="text" name="RG" placeholder="Digite o RG" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="carteiraTrabalho">Carteira de Trabalho</label>
+                        <input  id="carteiraTrabalho" type="text" name="numeroRegistro" placeholder="Número da Carteira" required>
+                        <input  id="serie" type="text" name="serie" placeholder="Série" required>
+                        <h6 class="my-5">Data de Emissão</h6>
+                        <input  id="dataEmissao" type="date" name="dataEmissao" placeholder="Data de Emissão" required>
+                    </div>
+
+                    
+                    <div class="mb-3">
+                        <label for="email">Email</label>
+                        <input  id="email" type="email" name="email" placeholder="Digite o email" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="telefone">Telefone</label>
+                        <input  id="telefone" type="text" name="telefone" placeholder="(--)-----_----" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="endereco">Endereço</label>
+                        <input  id="endereco" type="text number" name="endereco" placeholder="Digite o endereço" required>
+                    </div>
+
+
+
+
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+   
+
+
+<!-- Bootstrap JavaScript  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
+</body>
+</html>
