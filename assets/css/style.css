@@ -4,12 +4,12 @@
 body {
     font-family: 'Raleway', Arial, sans-serif; 
     background-color: #0a8967;
-    font-size: 25px; /* Tamanho de fonte global */
+    font-size: 30px; /* Tamanho de fonte global */
     
 }
 
 .container {
-    background-color: #fff;
+    background-color: #fbfbfb;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px auto; /* Centralize a caixa no centro da tela */
@@ -52,7 +52,7 @@ body {
 }
 
 .dropdown-content a {
-    color: #fff;
+    color: #ffffff;
     padding: 10px;
     text-decoration: none;
     display: block;
@@ -61,20 +61,29 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.form-label {
+.inputs-abaixo-imagem .form-control {
+    width: 100%; /* Defina a largura das inputs para ocupar 100% da largura disponível */
+    margin-bottom: 20px; /* Adicione um espaçamento entre as inputs */
+}
+/* Ajuste o tamanho das colunas para cada parte do formulário */
+.cadastro-form .col-md-6 {
     font-weight: bold;
-    font-size: 20px; /* Tamanho da fonte para rótulos de formulário */
+    font-size: 18px; /* Tamanho da fonte para rótulos de formulário */
+
 }
 
-.form-control {
+/* Ajuste o tamanho dos inputs */
+.cadastro-form .form-control {
     margin-bottom: 15px;
-    font-size: 25px; /* Tamanho da fonte para inputs de formulário */
+    font-size: 16px; /* Tamanho da fonte para inputs de formulário */
+    padding: 12px 20px; /* Ajuste o preenchimento superior e inferior e esquerda/direita */
+
 }
 
 /* Estilo para centralizar o formulário */
 .cadastro-form {
     margin: 0 auto; /* Centraliza horizontalmente */
-    max-width: 600px; /* Defina a largura máxima */
+    max-width: 600px; /* Defina a largura máxima do formulário conforme necessário */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -129,3 +138,22 @@ img {
         width: 100%;
     }
 }
+.custom-input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+/* Estilos para o campo "Cargo" */
+.col-md-6 input[name="cargo"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Estilos para o campo "Salário" */
+.col-md-6 input[name="salario"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+
+
