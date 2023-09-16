@@ -1,11 +1,10 @@
-/* Importação da fonte Raleway do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600&display=swap');
 
 /* Estilos globais */
 body {
-    font-family: 'Raleway', Arial, sans-serif; /* Use a fonte Raleway para o corpo do documento */
+    font-family: 'Raleway', Arial, sans-serif; 
     background-color: #0a8967;
-    font-size: 25px; /* Tamanho de fonte global desejado */
+    font-size: 25px; /* Tamanho de fonte global */
     
 }
 
@@ -64,18 +63,18 @@ body {
 }
 .form-label {
     font-weight: bold;
-    font-size: 18px; /* Tamanho da fonte para rótulos de formulário */
+    font-size: 20px; /* Tamanho da fonte para rótulos de formulário */
 }
 
 .form-control {
     margin-bottom: 15px;
-    font-size: 16px; /* Tamanho da fonte para inputs de formulário */
+    font-size: 25px; /* Tamanho da fonte para inputs de formulário */
 }
 
 /* Estilo para centralizar o formulário */
 .cadastro-form {
     margin: 0 auto; /* Centraliza horizontalmente */
-    max-width: 600px; /* Defina a largura máxima do formulário conforme necessário */
+    max-width: 600px; /* Defina a largura máxima */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -112,7 +111,7 @@ img {
 /* Estilos para a grade de 3x3 */
 .row {
     margin-left: -10px;
-    margin-right: -20px;
+    margin-right: -15px;
 }
 
 .col-md-6 {
