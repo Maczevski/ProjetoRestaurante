@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400;1,500;1,600&display=swap');
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#0c5149 ;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+.restaurante{
+    margin-left: 13vw;
+    font-weight: 700;
+}
+form{
+    border-radius: 25px;
+    margin-top: 10%;
+    padding: 3vw;
+    width: 50vw;
+    align-items: center;
+    color:white ;
+    background-color: #0a8967;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

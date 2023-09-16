@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400;1,500;1,600&display=swap');
+body{
+    background-color:#0c5149 ;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+#navbar{
+    gap: 5vw;
+}
+
+.nav-link{
+ color:white ;
+}
+

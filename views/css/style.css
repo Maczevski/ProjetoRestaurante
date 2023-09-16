@@ -1,21 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400;1,500;1,600&display=swap');
+
 .body-bg{
-    background-color: #0d192b;
-    font-family:monospace;
+    background-color:#07f9a2;
+    font-family:'Poppins';
     margin: 0;
     padding: 0;
 }
 
+.centered-title{
+    text-align: center;
+    color: #0d192b;
+}
 
 .Titulo{
-        margin-top: 30px;
         color: #07f9a2;
+        font-size: x-large;
+        font-weight: bold;
+}
+
+.navbar{
+    width: 100%;  
+    background-color: #0d192b;
+    height: 70px;
+    position: fixed;
+    top: 0; /* Fixar no topo da tela */
+    left: 0; /* Fixar no lado esquerdo da tela */
+    width: 100%; /* Largura total */
+    color: white;
+    z-index: 1000; 
 }
 
 /* Estilizando o menu de navegação */
 .menu-navegacao {
-    background-color: #081324;
-    color: #07f9a2;
-    padding: 12px;
+    padding: 3px;
     left: 0%;
 }
 
@@ -25,46 +42,59 @@
 }
 
 .menu-navegacao ul li {
-    color: #07f9a2;
     display: inline-block;
-    margin-right: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
     position: relative;
 }
 
-.menu-navegacao ul li a {
+.navbar-text{
+    text-align: right;
+    padding: 20px;
+    color:#a9ffe0;
     text-decoration: none;
-    color: #d7fff0;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color:#0c5149;
-    min-width: 100px;
+    border-radius: 10px;
+    min-width: 80px;
     z-index: 1;
-    padding: 0;
-    margin: 0;
+    text-align: left;
 }
+
 
 .dropdown-content li {
     display: block;
 }
 
 .dropdown-content a {
-    color: #fff;
-    padding: 10px;
     text-decoration: none;
     display: block;
+    color: #f7fffc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.dropdown-content a:hover {
+    background-color: #081324;
+    width: 100%;
+    border-radius: 5px;
 }
 
 /* Mostrar o dropdown quando passar o mouse sobre o item do menu */
 .menu-navegacao ul li:hover .dropdown-content {
     display: block;
 }
+
 .table-content{
-    background-color: #0d192b;
-    color: white;
     text-align: center;
+    background-color: #fff;
+    width: 100px;
+    position: relative;
 }
 
 .quantidade{
@@ -76,24 +106,34 @@
 }
 
 .container-tabela{
-    margin-top: 30px;
+  
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 90px;
+    border-radius: 25px;
+    padding: 15px;
+    width: 50vw;
+    background-color: #09c184;
+    margin-bottom: 30px;
+    max-width: 800px;
 }
 
 .tabela-estoque{
-    color:#07f9a2;
-    border: 1px solid#07f9a2;
+    color:#0d192b;
+    background-color: #ffff;
     border-collapse: collapse;
     margin: auto;
 
 }
 
 .tabela-estoque td{
-    border: 1px solid#07f9a2;
+    border: 2px solid #0d192b;
     height: 30px;
 }
 
 .tabela-estoque th{
-    border: 1px solid#07f9a2;
+    border: 2px solid #0d192b;
     width: 300px;
     height: 40px;
     text-align: center;
@@ -107,21 +147,22 @@
 
 .botao-estoque{
     color: #07f9a2;
-    background-color: #0d192b;
+    background-color: #0c5149;
     width: 200px;
     height: 40px;
     cursor: pointer;
-  
-   
+    border: #0c5149 solid 2px;
+    border-radius: 15px;
 }
 
-
-
+.botao-estoque:hover{
+    background-color: #0a8967;
+}
 /* Estilos para a janela modal */
 .janela-estoque {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 2000;
     left: 0;
     top: 0;
     width: 100%;
@@ -132,10 +173,11 @@
 
 /* Estilos para o conteúdo da janela modal */
 .janela-conteudo {
-    background-color: #07f9a2;
+    background-color: #ffff;
     padding: 50px;
     border: 1px solid #8b8b8b;
-    max-width: 600px; /* Adicione uma largura máxima para evitar que a janela fique muito larga */
+    width: 570px; /* Adicione uma largura máxima para evitar que a janela fique muito larga */
+    height: 400px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
     position: fixed;
@@ -143,12 +185,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 2%;
+    z-index: 2000;
 }
 
 
 /* Estilos para o campo de entrada e títulos */
 .inserir-produto {
-    background-color: #a9ffe0;
+    background-color: #ffff;
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -167,7 +210,7 @@
 }
 
 .botaoAdicionarProduto{
-    margin-top: 10px;
+   margin-top: 50px;
     color: #07f9a2;
     background-color: #0c5149;
     border: 1px solid #081324;
@@ -175,6 +218,10 @@
     height: 40px;
     cursor: pointer;
     border-radius: 8px;
+}
+
+.botaoAdicionarProduto:hover{
+    background-color: #0a8967;
 }
 
 
