@@ -3,118 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cadastro de funcionario</title>
- <!-- Bootstrap CSS  -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
+    <title>Cadastro de Funcionário</title>
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom.css"> <!-- Vinculando o arquivo de estilo personalizado -->
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-            <button type="button" class="btn btn-primary">Restaurante Valorant</button>
-          
-            <div class="btn-group" role="group">
-              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                menu
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">cadastro de funcionario</a></li>
-                <li><a class="dropdown-item" href="#">sair</a></li>
-              </ul>
-            </div>
-          </div>
-    </nav>
+<nav class="navbar">
+    <div class="menu-navegacao">
+        <ul>
+            <li class="Titulo">Restaurante Valorant</li>
+            <li class="dropdown">
+                <a class="navbar-text" href="#">Menu</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Teste</a></li>
+                    <li><a href="#">Teste</a></li>
+                    <li><a href="#">Teste</a></li>
+                    <li><a href="#">Teste</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-    <div class="container">
-        <h1 class="my-5">cadastro de funcionario</h1>
-        <!--Imagen-->
-        <div class="row">
-            <div class="col-md-6">
-                <img src="assets/img/undraw_group_hangout_re_4t8r.svg" alt="">
-            </div>
-            <div class="col-md-6">
 
-                <form>
-                    <div class="mb-3">
+<div class="container">
+    <h1 class="my-5">Cadastro de Funcionário</h1>
+    <!-- Imagem -->
+    <div class="row">
+        <div class="col-md-6">
+            <img src="assets/img/undraw_add_document_re_mbjx.svg" alt="">
+        </div>
+
+        <!-- Div de Cadastro -->
+        <div class="col-md-6">
+            <form>
+                <div class=" row md-3">
+                    <div class="col-md-6">
                         <label for="codigo" class="form-label">Código de Registro</label>
                         <input type="number" class="form-control" id="codigo" placeholder="0000" required>
                     </div>
+                </div>
 
-                    <div class="mb-3">
+                <div class="row mb-3">
+                    <div class="col-md-6">
                         <label for="nome" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="nome" placeholder="Ex:Regina" required>
+                        <input type="text" class="form-control" id="nome" placeholder="Ex: Regina" required>
                     </div>
-
-                    <div class="mb-3">
+                    <div class="col-md-6">
                         <label for="sobrenome" class="form-label">Sobrenome</label>
-                        <input type="text" class="form-control" id="sobrenome" placeholder="Ex:Pereira Da Silva" required>
+                        <input type="text" class="form-control" id="sobrenome" placeholder="Ex: Pereira Da Silva" required>
                     </div>
+                     
+                </div>
 
-                    <div class="mb-3">
+                <div class="row mb-3">
+                 
+                    <div class="col-md-6">
                         <label for="genero" class="form-label">Gênero</label>
-                        <select class="form-control" id="genero" required>
+                        <select class="form-select" id="genero" required>
                             <option value="Mulher">Mulher</option>
                             <option value="Homem">Homem</option>
                             <option value="Outro">Outro</option>
                         </select>
                     </div>
-
-                    <div class="mb-3">
-                        <label for="data" class="form-label">Data de nacismento</label>
+                    <div class="col-md-6">
+                        <label for="data" class="form-label">Data de Nascimento</label>
                         <input type="date" class="form-control" id="data" required>
                     </div>
 
-                    <div class="mb-3">
-                        <label for="CPF">CPF</label>
-                        <input  id="CPF" type="text" name="CPF" placeholder="***.***.***-**" required>
+                    </div>
+                    <div class="row mb-3">
+                    <div class="col-md-6">
+                         <label for="CPF">CPF</label>
+                         <input id="CPF" type="text" class="form-control" name="CPF" placeholder="***.***.***-**" required>
+                     </div>
+                     <div class="col-md-6">
+                         <label for="RG">RG</label>
+                         <input id="RG" type="text" class="form-control" name="RG" placeholder="Digite o RG" required>
+                     </div>
+
                     </div>
 
-                    <div class="mb-3">
-                        <label for="RG">RG</label>
-                        <input  id="RG" type="text" name="RG" placeholder="Digite o RG" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="carteiraTrabalho">Carteira de Trabalho</label>
-                        <input  id="carteiraTrabalho" type="text" name="numeroRegistro" placeholder="Número da Carteira" required>
-                        <input  id="serie" type="text" name="serie" placeholder="Série" required>
-                        <h6 class="my-5">Data de Emissão</h6>
-                        <input  id="dataEmissao" type="date" name="dataEmissao" placeholder="Data de Emissão" required>
-                    </div>
-
-                    
-                    <div class="mb-3">
-                        <label for="email">Email</label>
-                        <input  id="email" type="email" name="email" placeholder="Digite o email" required>
-                    </div>
-                    
-                    <div class="mb-3">
-                        <label for="telefone">Telefone</label>
-                        <input  id="telefone" type="text" name="telefone" placeholder="(--)-----_----" required>
-                    </div>
-                    
-                    <div class="mb-3">
-                        <label for="endereco">Endereço</label>
-                        <input  id="endereco" type="text number" name="endereco" placeholder="Digite o endereço" required>
-                    </div>
-
-
-
-
-
-                </form>
-
+    </div>
+         <!-- Div de Cadastro em 3x3 abaixo da imagem -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- Div 2 -->
+                    <label for="carteiraTrabalho">Carteira de Trabalho</label>
+                    <input id="carteiraTrabalho" type="text" class="form-control" name="numeroRegistro" placeholder="Número da Carteira" required>
+                </div>
+                <div class="col-md-4">
+                    <!-- Div 3 -->
+                    <label for="serie">Série</label>
+                    <input id="serie" type="text" class="form-control" name="serie" placeholder="Série" required>
+                </div>
+                 <div class="col-md-4">
+                    <!-- Div 4 -->
+                    <label for="dataEmissao">Data de Emissão</label>
+                    <input id="dataEmissao" type="date" class="form-control" name="dataEmissao" required>
+                </div>
             </div>
-
+            <div class="row mt-3">
+               
+                <div class="col-md-4">
+                    <!-- Div 5 -->
+                    <label for="email">Email</label>
+                    <input id="email" type="email" class="form-control" name="email" placeholder="Digite o email" required>
+                </div>
+                <div class="col-md-4">
+                    <!-- Div 6 -->
+                    <label for="telefone">Telefone</label>
+                    <input id="telefone" type="text" class="form-control" name="telefone" placeholder="(--)-----_----" required>
+                </div>
+                 <div class="col-md-4">
+                    <!-- Div 7 -->
+                    <label for="endereco">Endereço</label>
+                    <input id="endereco" type="text" class="form-control" name="endereco" placeholder="Digite o endereço" required>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <!-- Div 8 -->
+                    <label for="cargo">Cargo</label>
+                    <input  id="cargo" type="text" name="cargo" placeholder="Ex: Gerente" required>
+                </div>
+                <div class="col-md-4">
+                    <!-- Div 9 -->
+                    <label for="salario">Salário</label>
+                    <input  id="salario" type="number" name="salario" placeholder="Ex: 1350.00" required>
+                </div>
+            </div>
         </div>
     </div>
-   
+ </div>
 
+    <div>
+          <form>
+             <!-- Div de Botões -->
+            <div class="row mb-3">
+              <div class="col-md-6">
+                  <button class="btn btn-primary-cancelar" type="submit">Cancelar</button>
+              </div>
+             <div class="col-md-6 text-end">
+                <button class="btn btn-primary-salvar" type="submit">Salvar</button>
+             </div>
+            </div>
+             
+            </form>
+        </div>
+    </div>
+</div>
 
 <!-- Bootstrap JavaScript  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+
 </body>
 </html>

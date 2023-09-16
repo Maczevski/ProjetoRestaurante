@@ -1,86 +1,118 @@
+/* Importação da fonte Raleway do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600&display=swap');
 
-h1{
-    color: #0d192b(69, 42, 165);
-}
-/* Estilos gerais */
+/* Estilos globais */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
+    font-family: 'Raleway', Arial, sans-serif; /* Use a fonte Raleway para o corpo do documento */
+    background-color: #0a8967;
+    font-size: 25px; /* Tamanho de fonte global desejado */
+    
 }
 
 .container {
     background-color: #fff;
-    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Centralize a caixa no centro da tela */
+    max-width: 2000px; /* Defina uma largura máxima para o conteúdo */
+    padding: 20px;
+    margin-top: 20px; /* Adicione espaço (margem superior) entre a barra de menu e o container */
+    margin-bottom: 20px;
+    min-height: 100vh;
 }
 
-h1 {
-    text-align: center;
-    margin-top: 20px;
-    color: #333;
-}
-
-/* Estilos para a barra de navegação */
+/* Estilos para o menu de navegação */
 .navbar {
-    background-color: #007bff;
-}
-
-.navbar-brand {
-    color: #fff;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.nav-link {
+    background-color: #081324;
     color: #fff;
 }
 
-/* Estilos para o botão "menu" */
-.dropdown-toggle::after {
-    content: none; /* Remove o ícone de seta padrão */
+.menu-navegacao ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* Estilos para os campos do formulário */
+.menu-navegacao li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Estilos para o dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 .form-label {
     font-weight: bold;
+    font-size: 18px; /* Tamanho da fonte para rótulos de formulário */
 }
 
 .form-control {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
     margin-bottom: 15px;
-    width: 100%;
+    font-size: 16px; /* Tamanho da fonte para inputs de formulário */
 }
 
-/* Estilos para o botão "Executar Ação" */
-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
+/* Estilo para centralizar o formulário */
+.cadastro-form {
+    margin: 0 auto; /* Centraliza horizontalmente */
+    max-width: 600px; /* Defina a largura máxima do formulário conforme necessário */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que o formulário ocupe pelo menos a altura da tela */
+}
+/* Estilo padrão dos botões */
+.btn-primary-cancelar,
+.btn-primary-salvar {
+    background-color: #0d192b; /* Cor de fundo padrão */
+    color: #fff; 
+    border: none; /* Remova a borda dos botões */
+    border-radius: 5px; /* Adicione bordas arredondadas aos botões */
+    padding: 10px 20px; /* Espaçamento interno dos botões */
+    cursor: pointer; /* Mude o cursor para uma mão ao passar o cursor sobre os botões */
+    transition: background-color 0.3s ease; /* Adicione uma transição suave */
 }
 
-button:hover {
-    background-color: #0056b3;
+/* Estilo dos botões quando o cursor passa por cima */
+.btn-primary-cancelar:hover {
+    background-color: #e74c3c; /* Cor de fundo ao passar o cursor */
+}
+
+.btn-primary-salvar:hover {
+    background-color: #2ecc71; /* Cor de fundo ao passar o cursor */
 }
 
 /* Estilos para a imagem */
 img {
-    max-width: 50%;
+    max-width: 80%;
     height: auto;
 }
 
 /* Estilos para a grade de 3x3 */
 .row {
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: -10px;
+    margin-right: -20px;
 }
 
 .col-md-6 {
