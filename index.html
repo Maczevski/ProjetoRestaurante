@@ -13,146 +13,111 @@
             padding: 10px; /* Espaçamento interno dos inputs */
         }
     </style>
-   
-<body>
+</head>
+ <body>
 
     <nav class="navbar">
-    <div class="menu-navegacao">
-        <ul>
-            <li class="Titulo">Restaurante Valorant</li>
-            <li class="dropdown">
-                <a class="navbar-text" href="#">Menu</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">Teste</a></li>
-                    <li><a href="#">Teste</a></li>
-                    <li><a href="#">Teste</a></li>
-                    <li><a href="#">Teste</a></li>
+        <div class="navbar">
+            <nav class="menu-navegacao">
+                <ul>
+                    <li class="Titulo"">Restaurante Valorant</li>
+                    <li class="dropdown">
+                        <a class="navbar-text" href="#">Menu</a>
+                         <ul class="dropdown-content">
+                            <li><a href="#">Teste</a></li>
+                            <li><a href="#">Teste</a></li>
+                            <li><a href="#">Teste</a></li>
+                            <li><a href="#">Teste</a></li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-        </ul>
-    </div>
-    </nav>
+            </nav>
+        </div>
 
 
     <div class="container">
     <h1 class="my-5">Cadastro de Funcionário</h1>
-    <!-- Imagem -->
-    <div class="row">
-        <div class="col-md-6">
-            <img src="assets/img/undraw_add_document_re_mbjx.svg" alt="">
-        </div>
-
-        <!-- Div de Cadastro -->
-        <div class="col-md-6">
-            <form>
-                <div class=" row md-3">
-                    <div class="col-md-6">
-                        <label for="codigo" class="form-label">Código de Registro</label>
+         <!--01-->
+        <div class="row g-3">
+            <div class="col">
+                  <label for="codigo" class="form-label">Código de Registro</label>
                         <input type="number" class="form-control" id="codigo" placeholder="0000" required>
-                    </div>
-                </div>
-
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="nome" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="nome" placeholder="Ex: Regina" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="sobrenome" class="form-label">Sobrenome</label>
-                        <input type="text" class="form-control" id="sobrenome" placeholder="Ex: Pereira Da Silva" required>
-                    </div>
-                     
-                </div>
-
-                <div class="row mb-3">
-                 
-                    <div class="col-md-6">
-                        <label for="genero" class="form-label">Gênero</label>
-                        <select class="form-select" id="genero" required>
-                            <option value="Mulher">Mulher</option>
-                            <option value="Homem">Homem</option>
-                            <option value="Outro">Outro</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="data" class="form-label">Data de Nascimento</label>
-                        <input type="date" class="form-control" id="data" required>
-                    </div>
-
-                    </div>
-                    <div class="row mb-3">
-                    <div class="col-md-6">
-                         <label for="CPF">CPF</label>
-                         <input id="CPF" type="text" class="form-control" name="CPF" placeholder="***.***.***-**" required>
-                     </div>
-                     <div class="col-md-6">
-                         <label for="RG">RG</label>
-                         <input id="RG" type="text" class="form-control" name="RG" placeholder="Digite o RG" required>
-                     </div>
-
-                    </div>
-
-    </div>
-
-    <div class="col-md-12 inputs-abaixo-imagem">
-  <!-- Div de Cadastro em 3x3 abaixo da imagem -->
-    <div class="row">
-        <div class="col-md-12">
-            <div class="row">
-                <div class="col-md-4">
-    
-                    <label for="carteiraTrabalho">Carteira de Trabalho</label>
-                    <input id="carteiraTrabalho" type="text" class="form-control" name="numeroRegistro" placeholder="Número da Carteira" required>
-                </div>
-                <div class="col-md-4">
-                 
-                    <label for="serie">Série</label>
-                    <input id="serie" type="text" class="form-control" name="serie" placeholder="Série" required>
-                </div>
-                 <div class="col-md-4">
-                    
-                    <label for="dataEmissao">Data de Emissão</label>
-                    <input id="dataEmissao" type="date" class="form-control" name="dataEmissao" required>
-                </div>
-            </div>
-            <div class="row mt-3">
-               
-                <div class="col-md-4">
-                    
-                    <label for="email">Email</label>
-                    <input id="email" type="email" class="form-control" name="email" placeholder="Digite o email" required>
-                </div>
-                <div class="col-md-4">
-                   
-                    <label for="telefone">Telefone</label>
-                    <input id="telefone" type="text" class="form-control" name="telefone" placeholder="(--)-----_----" required>
-                </div>
-                 <div class="col-md-4">
-                  
-                    <label for="endereco">Endereço</label>
-                    <input id="endereco" type="text" class="form-control" name="endereco" placeholder="Digite o endereço" required>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-md-4">
-                  
-                    <label for="cargo">Cargo</label>
-                    <input  id="cargo" type="text" name="cargo" class="form-control custom-input" placeholder="Ex: Gerente" required>
-                </div>
-                <div class="col-md-4">
-                  
-                    <label for="salario">Salário</label>
-                    <input  id="salario" type="number" name="salario" class="form-control custom-input" placeholder="Ex: 1350.00" required>
-                </div>
+        
             </div>
         </div>
-    </div>
+        <!--02-->
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Ex: Regina" required>
+              </div>
+              <div class="col-md-6">
+                <label for="sobrenome" class="form-label">Sobrenome</label>
+                <input type="text" class="form-control" id="sobrenome" placeholder="Ex: Pereira Da Silva" required>
+              </div>
+         <!--03-->
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">email</label>
+                <input type="email" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-4">
+                <label for="genero" class="form-label">Gênero</label>
+                <select class="form-select" id="genero" required>
+                    <option value="Mulher">Mulher</option>
+                    <option value="Homem">Homem</option>
+                    <option value="Outro">Outro</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="data" class="form-label">Data de Nascimento</label>
+                        <input type="date" class="form-control" id="data" required>
+              </div>
+         <!--04-->
+         <div class="col-md-6">
+            <label for="Telefone" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="nomtelefonee" placeholder="(00) 0000-0000" required>
+          </div>
+          <div class="col-md-6">
+            <label for="sobrenome" class="form-label">endereço</label>
+            <input type="text number" class="form-control" id="endereço" placeholder="Ex: rua maria,n 55, bairro flores" required>
+          </div>
 
-    </div>
-       
- </div>
+   <!--05-->
+              <div class="col-md-6">
+                <label for="CPF">CPF</label>
+                <input id="CPF" type="text" class="form-control" name="CPF" placeholder="***.***.***-**" required>
+              </div>
+              <div class="col-md-6">
+                <label for="RG">RG</label>
+                <input id="RG" type="text" class="form-control" name="RG" placeholder="Digite o RG" required>
+              </div>
+              <!--06-->
+             
+              <div class="col-md-6">
+                <label for="carteiraTrabalho">Carteira de Trabalho</label>
+                <input id="carteiraTrabalho" type="text" class="form-control" name="numeroRegistro" placeholder="Número da Carteira" required>
+              </div>
+              <div class="col-md-4">
+                <label for="serie">Série</label>
+                <input id="serie" type="text" class="form-control" name="serie" placeholder="Série" required>
+              </div>
+              <div class="col-md-2">
+                <label for="dataEmissao">Data de Emissão</label>
+                <input id="dataEmissao" type="date" class="form-control" name="dataEmissao" required>
+              </div>
+             <!--07-->
 
-    <div>
+              <div class="col-md-6">
+                <label for="cargo">Cargo</label>
+                    <input  id="cargo" type="text" name="cargo" class="form-control custom-input" placeholder="Ex: Gerente" required>
+              </div>
+              <div class="col-md-6">
+                <label for="salario">Salário</label>
+                <input  id="salario" type="number" name="salario" class="form-control custom-input" placeholder="Ex: 1350.00" required>
+              </div>
+
+
+       <div>
           <form>
              <!-- Div de Botões -->
             <div class="row mb-3">
@@ -166,12 +131,13 @@
              
             </form>
         </div>
-    </div>
-    </div>
+     </div>
+   </div>
 
     <!-- Bootstrap JavaScript  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
 
 </body>
+
 </html>

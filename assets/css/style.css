@@ -3,157 +3,109 @@
 /* Estilos globais */
 body {
     font-family: 'Raleway', Arial, sans-serif; 
+    color: rgb(0, 0, 0);
     background-color: #0a8967;
-    font-size: 30px; /* Tamanho de fonte global */
-    
 }
 
-.container {
+.form-control,
+.form-select {
+    font-size: 18px;
+}
+
+.container{
     background-color: #fbfbfb;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px auto; /* Centralize a caixa no centro da tela */
-    max-width: 2000px; /* Defina uma largura máxima para o conteúdo */
+    margin: 20px auto; 
     padding: 20px;
-    margin-top: 20px; /* Adicione espaço (margem superior) entre a barra de menu e o container */
+    margin-top: 20px;
     margin-bottom: 20px;
-    min-height: 100vh;
 }
 
-/* Estilos para o menu de navegação */
-.navbar {
-    background-color: #081324;
-    color: #fff;
+.menu-navegacao {
+    padding: 3px;
+    left: 0%;
 }
 
 .menu-navegacao ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
-    margin: 0;
 }
 
-.menu-navegacao li {
-    display: inline;
-    margin-right: 20px;
-}
-
-/* Estilos para o dropdown */
-.dropdown {
-    position: relative;
+.menu-navegacao ul li {
     display: inline-block;
+    margin-left: 20px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.navbar-text{
+    text-align: right;
+    padding: 20px;
+    color:#a9ffe0;
+    text-decoration: none;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #333;
-    min-width: 100px;
+    background-color:#0c5149;
+    border-radius: 10px;
+    min-width: 80px;
     z-index: 1;
+    text-align: left;
+}
+
+
+.dropdown-content li {
+    display: block;
 }
 
 .dropdown-content a {
-    color: #ffffff;
-    padding: 10px;
     text-decoration: none;
     display: block;
+    color: #f7fffc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: start;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-content a:hover {
+    background-color: #081324;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Mostrar o dropdown quando passar o mouse sobre o item do menu */
+.menu-navegacao ul li:hover .dropdown-content {
     display: block;
 }
-.inputs-abaixo-imagem .form-control {
-    width: 100%; /* Defina a largura das inputs para ocupar 100% da largura disponível */
-    margin-bottom: 20px; /* Adicione um espaçamento entre as inputs */
-}
-/* Ajuste o tamanho das colunas para cada parte do formulário */
-.cadastro-form .col-md-6 {
-    font-weight: bold;
-    font-size: 18px; /* Tamanho da fonte para rótulos de formulário */
 
-}
 
-/* Ajuste o tamanho dos inputs */
-.cadastro-form .form-control {
-    margin-bottom: 15px;
-    font-size: 16px; /* Tamanho da fonte para inputs de formulário */
-    padding: 12px 20px; /* Ajuste o preenchimento superior e inferior e esquerda/direita */
-
+/* Estilos para o botão Cancelar */
+.btn-primary-cancelar {
+    background-color: #0d192b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
 }
 
-/* Estilo para centralizar o formulário */
-.cadastro-form {
-    margin: 0 auto; /* Centraliza horizontalmente */
-    max-width: 600px; /* Defina a largura máxima do formulário conforme necessário */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centraliza verticalmente */
-    min-height: 100vh; /* Garante que o formulário ocupe pelo menos a altura da tela */
-}
-/* Estilo padrão dos botões */
-.btn-primary-cancelar,
-.btn-primary-salvar {
-    background-color: #0d192b; /* Cor de fundo padrão */
-    color: #fff; 
-    border: none; /* Remova a borda dos botões */
-    border-radius: 5px; /* Adicione bordas arredondadas aos botões */
-    padding: 10px 20px; /* Espaçamento interno dos botões */
-    cursor: pointer; /* Mude o cursor para uma mão ao passar o cursor sobre os botões */
-    transition: background-color 0.3s ease; /* Adicione uma transição suave */
-}
-
-/* Estilo dos botões quando o cursor passa por cima */
 .btn-primary-cancelar:hover {
-    background-color: #e74c3c; /* Cor de fundo ao passar o cursor */
+    background-color: #0a8967;
+}
+
+/* Estilos para o botão Salvar */
+.btn-primary-salvar {
+    background-color: #0d192b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
 }
 
 .btn-primary-salvar:hover {
-    background-color: #2ecc71; /* Cor de fundo ao passar o cursor */
+    background-color: #0a8967; 
 }
-
-/* Estilos para a imagem */
-img {
-    max-width: 80%;
-    height: auto;
-}
-
-/* Estilos para a grade de 3x3 */
-.row {
-    margin-left: -10px;
-    margin-right: -15px;
-}
-
-.col-md-6 {
-    padding: 15px;
-}
-
-@media (max-width: 992px) {
-    .col-md-6 {
-        width: 50%;
-    }
-}
-
-@media (max-width: 768px) {
-    .col-md-6 {
-        width: 100%;
-    }
-}
-.custom-input {
-    width: 100%;
-    margin-bottom: 10px;
-}
-/* Estilos para o campo "Cargo" */
-.col-md-6 input[name="cargo"] {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-/* Estilos para o campo "Salário" */
-.col-md-6 input[name="salario"] {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-
-
-
