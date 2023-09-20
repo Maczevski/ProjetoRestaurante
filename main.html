@@ -4,7 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante Valorante</title>
-    <style>
+    
+   
+</head>
+<body class="color1">
+    <header class="color2">
+        <h1>Restaurante Valorante</h1>
+    </header>
+
+    <form class="dropdown-menu p-4">
+        <div class="form-group">
+          <label for="exampleDropdownFormEmail2">Endereço de email</label>
+          <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@exemplo.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleDropdownFormPassword2">Senha</label>
+          <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Senha">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+          <label class="form-check-label" for="dropdownCheck2">
+            Lembrar de mim
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Entrar</button>
+      </form>
+
+    
+      <!-- Menu principal (inicialmente oculto) -->
+    <div class="content" style="display: none;">
+        <h2>Menu Principal</h2>
+        <div class="menu-options">
+            <div class="menu-option color3">
+                <h3>Controle de Estoque</h3>
+            </div>
+            <div class="menu-option color4">
+                <h3>Controle de Pedidos</h3>
+            </div>
+            <div class="menu-option color5">
+                <h3>Funcionários</h3>
+            </div>
+            <div class="menu-option color1">
+                <h3>Finanças</h3>
+            </div>
+        </div>
+       
+        <div  class="centralize-right"> 
+        <footer>
+        <button class="centralize-right menu-option color1"  onclick="logout()">Sair</button>
+    </footer>   
+    </div>
+</div>
+
+    <script>
+        // Função para simular login (aqui você implementaria a autenticação real)
+        function login() {
+            // Verifique se o login é válido
+            // Neste exemplo, apenas mostraremos o menu após o "login"
+            document.querySelector('.login-page').style.display = 'none';
+            document.querySelector('.content').style.display = 'block';
+        }
+
+        // Função para fazer logout
+        function logout() {
+            document.querySelector('.content').style.display = 'none';
+            document.querySelector('.login-page').style.display = 'flex';
+        }
+    </script>
+</body>
+</html>
+
+
+ <!-- <style>
         /* Estilos de cores */
         .color1 { background-color: #07f9a2; }
         .color2 { background-color: #09c184; }
@@ -95,62 +166,4 @@
             bottom: 20px;
             right: 20px;
         }
-    </style>
-</head>
-<body class="color1">
-    <header class="color2">
-        <h1>Restaurante Valorante</h1>
-    </header>
-
-    <!-- Página de login -->
-    <div class="login-page">
-        <div class="login-box">
-            <h2>Faça login</h2>
-            <input type="text" class="login-input" placeholder="Usuário">
-            <input type="password" class="login-input" placeholder="Senha">
-            <button class="login-button" onclick="login()">Entrar</button>
-        </div>
-    </div>
-
-    <!-- Menu principal (inicialmente oculto) -->
-    <div class="content" style="display: none;">
-        <h2>Menu Principal</h2>
-        <div class="menu-options">
-            <div class="menu-option color3">
-                <h3>Controle de Estoque</h3>
-            </div>
-            <div class="menu-option color4">
-                <h3>Controle de Pedidos</h3>
-            </div>
-            <div class="menu-option color5">
-                <h3>Funcionários</h3>
-            </div>
-            <div class="menu-option color1">
-                <h3>Finanças</h3>
-            </div>
-        </div>
-       
-        <div  class="centralize-right"> 
-        <footer>
-        <button class="centralize-right menu-option color1"  onclick="logout()">Sair</button>
-    </footer>   
-    </div>
-</div>
-
-    <script>
-        // Função para simular login (aqui você implementaria a autenticação real)
-        function login() {
-            // Verifique se o login é válido
-            // Neste exemplo, apenas mostraremos o menu após o "login"
-            document.querySelector('.login-page').style.display = 'none';
-            document.querySelector('.content').style.display = 'block';
-        }
-
-        // Função para fazer logout
-        function logout() {
-            document.querySelector('.content').style.display = 'none';
-            document.querySelector('.login-page').style.display = 'flex';
-        }
-    </script>
-</body>
-</html>
+    </style>-->
