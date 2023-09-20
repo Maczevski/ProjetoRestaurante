@@ -11,6 +11,7 @@
 .centered-title{
     text-align: center;
     color: #0d192b;
+    font-size: xx-large;
 }
 
 .Titulo{
@@ -63,6 +64,7 @@
     min-width: 80px;
     z-index: 1;
     text-align: left;
+    margin-top: 15px;
 }
 
 
@@ -95,7 +97,34 @@
     background-color: #fff;
     width: 100px;
     position: relative;
+    border: 0.1px solid;
 }
+
+.table-content[type="number"]::-webkit-inner-spin-button,
+.table-content[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none; /* Remove a aparência padrão */
+    appearance: none; /* Remove a aparência padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.table-content:focus{
+    outline: none;
+}
+
+.excluir-produto{
+    text-align: center;
+}
+
+.excluir-produto button{
+    border: none;
+    background-color: #ffff;
+    cursor: pointer;
+}
+
+.x{
+    width: 15px;
+}
+
 
 .quantidade{
     text-align: center;
@@ -106,7 +135,6 @@
 }
 
 .container-tabela{
-  
     position: relative;
     left: 50%;
     transform: translate(-50%);
@@ -122,29 +150,51 @@
 .tabela-estoque{
     color:#0d192b;
     background-color: #ffff;
-    border-collapse: collapse;
     margin: auto;
+    border-collapse: collapse;
 
 }
 
 .tabela-estoque td{
-    border: 2px solid #0d192b;
+    border: 1px solid #0d192b;
     height: 30px;
 }
 
-.tabela-estoque th{
-    border: 2px solid #0d192b;
+.produto{
+    border: 1px solid #0d192b;
     width: 300px;
     height: 40px;
     text-align: center;
-
+}
+.excluir{
+    border: 1px solid #0d192b;
+    padding: 10px;
 }
 
 .container {
     margin-top: 30px;
-    text-align: center; 
+    padding: 15px;
+    text-align: center;
 }
 
+.botao-estoque{
+    background-color: #0d192b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin: 30px;
+}
+
+.botao-estoque:hover{
+    background-color: #0a8967;
+}
 /* Estilos para a janela modal */
 .janela-estoque {
     display: none;
@@ -187,6 +237,18 @@
     font-size: 16px;
     box-sizing: border-box;
     text-align: left;
+}
+
+.inserir-produto[type="number"]::-webkit-inner-spin-button,
+.inserir-produto[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none; /* Remove a aparência padrão */
+    appearance: none; /* Remove a aparência padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.inserir-produto:focus{
+    outline: none;
+    background-color: #f0f0f0;
 }
 
 /* Estilos para os títulos */
@@ -250,48 +312,63 @@
     margin-top: 90px;
     border-radius: 10px;
     padding: 10px;
-    width: 80%;
     background-color: #ffff;
     margin-bottom: 30px;
-    /* max-width: 800px; */
+    max-width: 800px;
     text-align: center;
 }
 .cadastro-produtos{
     background-color: #ffff;
-    align-items: start;
 }
 
 .cadastro-title{
     font-weight: bold;
     display: inline-block;
     width: 200px;
-    text-align: left;
+    text-align: start;
     padding: 10px;
-    width: 200px; /* Defina a largura desejada para os rótulos */
     display: inline-block;
-    margin-right: 400px; /* Adicione margem à direita para separar os rótulos dos campos de entrada */
+    margin-right: 35%; /* Adicione margem à direita para separar os rótulos dos campos de entrada */
 }
 
 .input-cadastro{
     background-color: #ffff;
-    width: 80%;
+    width: 60%;
     padding: 10px;
     border: 1px solid #0d192b;
     border-radius: 4px;
     font-size: 16px;
     box-sizing: border-box;
     text-align: left;
+    font-family: 'Raleway';
 }
 
+.input-cadastro[type="number"]::-webkit-inner-spin-button,
+.input-cadastro[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none; /* Remove a aparência padrão */
+    appearance: none; /* Remove a aparência padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.input-cadastro:focus{
+    outline: none;
+}
+
+
 .text-description{
+    position: relative;
     margin-bottom: 20px;
     background-color: #ffff;
-    width: 80%;
-    height: 80px;
+    width: 60%;
     padding: 10px;
     border: 1px solid #0d192b;
     border-radius: 4px;
     font-size: 16px;
     box-sizing: border-box;
     text-align: left;
+    font-family: 'Raleway';
+    height: 80px;
+}
+.text-description:focus{
+    outline: none;
 }
