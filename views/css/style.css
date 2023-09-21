@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600&display=swap');
+
+.body-bg{
+    background-color:#09c184;
+    font-family:'Raleway';
+    margin: 0;
+    padding: 0;
+}
+
+.centered-title{
+    text-align: center;
+    color: #0d192b;
+    font-size: xx-large;
+}
+
+.Titulo{
+        color: #07f9a2;
+        font-size: x-large;
+        font-weight: bold;
+}
+.navbar{
+    width: 100%;  
+    background-color: #0d192b;
+    height: 70px;
+    position: fixed;
+    top: 0; /* Fixar no topo da tela */
+    left: 0; /* Fixar no lado esquerdo da tela */
+    width: 100%; /* Largura total */
+    color: white;
+    z-index: 1000; 
+}
+
+/* Estilizando o menu de navegação */
+.menu-navegacao {
+    padding: 3px;
+    left: 0%;
+}
+
+.menu-navegacao ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-navegacao ul li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.navbar-text{
+    text-align: right;
+    padding: 20px;
+    color:#a9ffe0;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#0c5149;
+    border-radius: 10px;
+    min-width: 80px;
+    z-index: 1;
+    text-align: left;
+    margin-top: 15px;
+}
+
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+    color: #f7fffc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.dropdown-content a:hover {
+    background-color: #081324;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Mostrar o dropdown quando passar o mouse sobre o item do menu */
+.menu-navegacao ul li:hover .dropdown-content {
+    display: block;
+}
+
+.table-content{
+    text-align: center;
+    background-color: #fff;
+    width: 100px;
+    position: relative;
+    border: 0.1px solid;
+}
+
+.table-content[type="number"]::-webkit-inner-spin-button,
+.table-content[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none; /* Remove a aparência padrão */
+    appearance: none; /* Remove a aparência padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.table-content:focus{
+    outline: none;
+}
+
+.excluir-produto{
+    text-align: center;
+}
+
+.excluir-produto button{
+    border: none;
+    background-color: #ffff;
+    cursor: pointer;
+}
+
+.x{
+    width: 15px;
+}
+
+
+.quantidade{
+    text-align: center;
+}
+
+.nome-produto{
+    padding: 5px;
+}
+
+.container-tabela{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 90px;
+    border-radius: 10px;
+    padding: 15px;
+    width: 90%;
+    background-color: #fff;
+    margin-bottom: 30px;
+    max-width: 800px;
+}
+
+.tabela-estoque{
+    color:#0d192b;
+    background-color: #ffff;
+    margin: auto;
+    border-collapse: collapse;
+
+}
+
+.tabela-estoque td{
+    border: 1px solid #0d192b;
+    height: 30px;
+}
+
+.produto{
+    border: 1px solid #0d192b;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+}
+.excluir{
+    border: 1px solid #0d192b;
+    padding: 10px;
+}
+
+.container {
+    margin-top: 30px;
+    padding: 15px;
+    text-align: center;
+}
+
+.botao-estoque{
+    background-color: #0d192b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin: 30px;
+}
+
+.botao-estoque:hover{
+    background-color: #0a8967;
+}
+
+/* Estilos para a janela modal */
+.janela-estoque {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(5, 14, 27, 0.71);
+}
+
+/* Estilos para o conteúdo da janela modal */
+.janela-conteudo {
+    background-color: #ffff;
+    padding: 50px;
+    border: 1px solid #8b8b8b;
+    width: 45%; /* Adicione uma largura máxima para evitar que a janela fique muito larga */
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: left;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2%;
+    z-index: 2000;
+}
+
+
+/* Estilos para o campo de entrada e títulos */
+.inserir-produto {
+    background-color: #ffff;
+    width: 100%;
+    padding: 10px;
+    margin: 30px 0;
+    border: 1px solid #0d192b;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.inserir-produto[type="number"]::-webkit-inner-spin-button,
+.inserir-produto[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none; /* Remove a aparência padrão */
+    appearance: none; /* Remove a aparência padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.inserir-produto:focus{
+    outline: none;
+    background-color: #f0f0f0;
+}
+
+/* Estilos para os títulos */
+.sub-janela {
+    text-align: left;
+    font-weight: bold;
+    font-size: large;
+    margin-right: 300px;
+    margin-top: 0px;
+}
+
+.botaoAdicionarProduto{
+    background-color: #0d192b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+
+
+.botaoAdicionarProduto:hover{
+    background-color: #0a8967;
+}
+
+.botaoEditarCardapio{
+    background-color: #0d192b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.botaoEditarCardapio:hover{
+    background-color: #0a8967;
+}
+
+.centered-bt{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos para o botão "fechar" */
+.fechar {
+    color: #0d192b;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.container-product{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 90px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ffff;
+    margin-bottom: 30px;
+    max-width: 800px;
+    text-align: center;
+}
+.cadastro-produtos{
+    background-color: #ffff;
+}
+
+.cadastro-title{
+    font-weight: bold;
+    display: inline-block;
+    width: 200px;
+    text-align: start;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 35%; /* Adicione margem à direita para separar os rótulos dos campos de entrada */
+}
+
+.input-cadastro{
+    background-color: #ffff;
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #0d192b;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: 'Raleway';
+}
+
+.input-cadastro[type="number"]::-webkit-inner-spin-button,
+.input-cadastro[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none; /* Remove a aparência padrão */
+    appearance: none; /* Remove a aparência padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.input-cadastro:focus{
+    outline: none;
+}
+
+
+.text-description{
+    position: relative;
+    margin-bottom: 20px;
+    background-color: #ffff;
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #0d192b;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: 'Raleway';
+    height: 80px;
+}
+.text-description:focus{
+    outline: none;
+}
+
+/* Cardapio */
+
+.cardapio-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.cardapio-table{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.cardapio-table td{
+    padding: 20px;
+}
+
+
+.botao-cardapio{
+    background-color: #0d192b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin: 30px;
+}
+
+.botao-cardapio:hover{
+    background-color: #0a8967;
+}
+
