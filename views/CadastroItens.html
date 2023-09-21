@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Itens</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body class="body-bg">
+    <div class="navbar">
+        <nav class="menu-navegacao">
+            <ul>
+                <li class="Titulo">Restaurante Valorant</li>
+                <li class="dropdown">
+                    <a class="navbar-text" href="#">Menu</a>
+                     <ul class="dropdown-content">
+                        <li><a href="#">Pedidos</a></li>
+                        <li><a href="#">Financeiro</a></li>
+                        <li><a href="#">Funcionarios</a></li>
+                        <li><a href="#">Vendas</a></li>
+                        <li><a href="CadastroItens.html">Cadastro de produtos</a></li>
+                        <li><a href="ControleEstoque.html">Controle de estoque</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container-product">
+        <h2 class="centered-title">
+            Cadastrar produto
+        </h2>
+        <div class="cadastro-produtos">
+            <label for="product-name" class="cadastro-title">Nome:</label><br>
+            <input class="input-cadastro" type="text" placeholder="Digite o nome do produto" id="product-name"><br>
+            <label for="product-type" class="cadastro-title">Tipo:</label><br>
+            <select class="input-cadastro" id="product-type">
+                <option value="" disabled selected hidden>Selecione uma opção</option>
+                <option value="Salgado">Salgado</option>
+                <option value="Doce">Doce</option>
+                <option value="Bebida">Bebida</option>
+            </select>
+            <label for="product-price" class="cadastro-title">Preço:</label><br>
+            <input class="input-cadastro" type="number" placeholder="Digite o preço do produto" id="product-price"><br>
+            <label for="product-img" class="cadastro-title">Imagem:</label><br>
+            <input class="input-cadastro" type="file" placeholder="Selecione uma imagem" id="product-img"><br>
+            <div class="container">
+                <button class="botaoAdicionarProduto">+ Cadastrar produto</button>
+                <!-- <a href="EditarCardapio.html"><button class="botaoEditarCardapio">Editar Cardápio</button></a>  -->
+           </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

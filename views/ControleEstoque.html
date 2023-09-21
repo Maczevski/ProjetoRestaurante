@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body class="body-bg">
+    <div class="navbar">
+        <nav class="menu-navegacao">
+            <ul>
+                <li class="Titulo">Restaurante Valorant</li>
+                <li class="dropdown">
+                    <a class="navbar-text" href="menu.html">Menu</a>
+                     <ul class="dropdown-content">
+                        <li><a href="#">Pedidos</a></li>
+                        <li><a href="#">Financeiro</a></li>
+                        <li><a href="#">Funcionarios</a></li>
+                        <li><a href="#">Vendas</a></li>
+                        <li><a href="CadastroItens.html">Cadastro de produtos</a></li>
+                        <li><a href="ControleEstoque.html">Controle de estoque</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+
+    <div class="container-tabela">
+        <h2 class="centered-title">
+            Controle de estoque
+        </h2> 
+        <table class="tabela-estoque">
+      
+        <thead>
+            <tr>
+                <th class="produto">Produto</th>
+                <th class="produto">Quantidade</th>
+                <th class="excluir">Excluir</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="nome-produto">Ovo</td>
+                <td class="quantidade""><input class="table-content" type="number" value="1" min="0"></td>
+                <td class="excluir-produto"><button><img src="img/x.png" alt="x" class="x"></button></td>
+            </tr>
+            <tr>
+                <td class="nome-produto">Pão</td>
+                <td class="quantidade"><input class="table-content" type="number" value="2" min="0"></td>
+                <td class="excluir-produto"><button><img src="img/x.png" alt="x" class="x"></button></td>
+            </tr>
+            <tr>
+                <td class="nome-produto">Farinha de trigo</td>
+                <td class="quantidade"><input class="table-content" type="number" value="3" min="0"></td>
+                <td class="excluir-produto"><button><img src="img/x.png" alt="x" class="x"></button></td>
+            </tr>
+            <tr>
+                <td class="nome-produto">Tomate</td>
+                <td class="quantidade"><input class="table-content" type="number" value="4" min="0"></td>
+                <td class="excluir-produto"><button><img src="img/x.png" alt="x" class="x"></button></td>
+            </tr>
+            <tr>
+                <td class="nome-produto">Coca-cola</td>
+                <td class="quantidade"><input class="table-content" type="number" value="5" min="0"></td>
+                <td class="excluir-produto"><button><img src="img/x.png" alt="x" class="x"></button></td>
+            </tr>
+            <tr>
+                <td class="nome-produto">Alface(kg)</td>
+                <td class="quantidade""><input class="table-content" type="number" value="6" min="0"></td>
+                <td class="excluir-produto"><button><img src="img/x.png" alt="x" class="x"></button></td>
+            </tr>
+            <tr>
+                <td class="nome-produto">Carne moída(kg)</td>
+                <td class="quantidade"><input class="table-content" type="number" value="7" min="0"></td>
+                <td class="excluir-produto"><button><img src="img/x.png" alt="x" class="x"></button></td>
+            </tr>
+            <tr>
+                <td class="nome-produto">Laranja</td>
+                <td class="quantidade"><input class="table-content" type="number" value="8" min="0"></td>
+                <td class="excluir-produto"><button><img src="img/x.png" alt="x" class="x"></button></td>
+            </tr>
+            <tr>
+                <td class="nome-produto">Schweppes</td>
+                <td class="quantidade"><input class="table-content" type="number" value="9" min="0"></td>
+                <td class="excluir-produto"><button><img src="img/x.png" alt="x" class="x"></button></td>
+            </tr>
+            <tr>
+                <td class="nome-produto">Batata(kg)</td>
+                <td class="quantidade"><input class="table-content" type="number" value="10" min="0"></td>
+                <td class="excluir-produto"><button><img src="img/x.png" alt="x" class="x"></button></td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <div class="container">
+        <button id="adicionar-produto" class="botao-estoque">+ Adicionar produto</button>
+        <button id="salvar-alteracoes" class="botao-estoque">Salvar Alterações</button>
+   </div>
+
+</div>
+
+<div id="myModal" class="janela-estoque">
+    <div class="janela-conteudo">
+        <span class="fechar">&times;</span>
+        <h2 class="centered-title">Adicionar novo item ao estoque</h2>
+        <label for="campoNome" class="sub-janela">Nome:</label>
+        <input class="inserir-produto" type="text" id="campoNome" placeholder="Digite o nome do produto">
+        <label for="campoqntd" class="sub-janela">Quantidade:</label>
+        <input class="inserir-produto" type="number" min="0" id="campoqntd" placeholder="Digite a quantidade do produto">
+        <div class="centered-bt">
+              <button class="botaoAdicionarProduto" id="botaoAdicionarProduto">Adicionar produto</button>
+        </div>
+      
+    </div>
+</div>
+
+
+<script src="js/script.js"></script>
+   
+    
+</body>
+</html>
