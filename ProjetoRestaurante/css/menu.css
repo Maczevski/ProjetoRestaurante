@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400;1,500;1,600&display=swap');
+body{
+    background-color:#0c5149 ;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+#navbar{
+    gap: 5vw;
+}
+
+.nav-link{
+ color:white ;
+}
+
+
+.navbar{
+    width: 100%;  
+    background-color: #0d192b;
+    height: 70px;
+    position: fixed;
+    top: 0; /* Fixar no topo da tela */
+    left: 0; /* Fixar no lado esquerdo da tela */
+    width: 100%; /* Largura total */
+    color: white;
+    z-index: 1000; 
+}
+
+/* Estilizando o menu de navegação */
+.menu-navegacao {
+    padding: 3px;
+    left: 0%;
+}
+.menu-navegacao ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.menu-container{
+    position: relative;
+    margin-top: 100px;
+}
+
+
