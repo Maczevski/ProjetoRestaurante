@@ -1,49 +1,74 @@
-.login {
-    margin-top: 8%;
-    background-color: #010b14;
-    padding: 3%;
-    border-radius: 8px;
-    color: black; /* Define a cor do texto como preta */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
 
-.bg-login{
-	background-color: #07f9a2;
+
+body{
+    height: 100vh;
+    background-color: #0a8967;
 
 }
 
-.espaco{
-	margin-top: 1%;
-    text-align: center; 
-}
-.bg-color1 { background-color: #07f9a2; }
+nav.menu-fin{
+    width: 200px;
+    height: 100%;
+    background-color: #0d192b;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #3280f5;
 
-        .bg-color2 { background-color: #09c184; }
-
-        .bg-color3 { background-color: #0a8967; }
-
-        .bg-color4 { background-color: #0c5149; }
-
-        .bg-color5 { background-color: #0d192b; }
-
-/* Personalize o botão com as variáveis de cores */
-.btn-bd-primary {
-    font-weight: var(--bs-btn-font-weight);
-    color: rgb(161, 132, 132); /* Cor das letras como branco */
-    background-color: var(--bd-violet-bg);
-    border-color: var(--bd-violet-bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
 }
 
-.btn-bd-primary:hover {
-    color: rgb(18, 16, 16); /* Cor das letras como branco ao passar o mouse */
-    background-color: #1b5a50; /* Cor de fundo ao passar o mouse */
-    border-color: #1b5a50; /* Cor da borda ao passar o mouse */
+
+.btn-expandir{
+   width: 20%;
+   padding-left: 10px; 
+   
+}
+.btn-expandir > i{  
+    color:  #0a8967;
+    font-size: 30px;
+    cursor: pointer;
+   
+}   
+ul li.item-menu{
+    transition: .2s;
+}
+ul li.item-menu:hover{
+    background-color:#0ea4db;
+   
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+
+}
+ul li.item-menu a{
+    color:  #0a8967;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+    ;
+}
+ul li.item-menu a .txt-link{
+    margin-left: 2px;
+}
+ul li.item-menu a.icoon > i{
+    font: 30px; 
 }
 
-.btn-bd-primary:focus {
-    box-shadow: 0 0 0 0.2rem rgba(56, 239, 218, 0.5); /* Sombra ao focar */
-}
-
-.btn-bd-primary:active {
-    color: rgb(57, 26, 26); /* Cor das letras como branco ao clicar */
-    background-color: #09332a; /* Cor de fundo ao clicar */
-    border-color: #09332a; /* Cor da borda ao clicar */
+ul.img{
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    backdrop-filter: #62c577;
 }

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600&display=swap');
+
+/* Estilos globais */
+body {
+    font-family: 'Raleway', Arial, sans-serif; 
+    color: rgb(0, 0, 0);
+    background-color:#0a8967;
+}
+
+.form-control,
+.form-select {
+    font-size: 18px;
+}
+
+.container{
+    background-color:#f7fffc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; 
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.navbar{
+    width: 100%;  
+    background-color: #0d192b;
+    height: 70px;
+    position: fixed;
+    top: 0; /* Fixar no topo da tela */
+    left: 0; /* Fixar no lado esquerdo da tela */
+    width: 100%; /* Largura total */
+    color: white;
+    z-index: 1000; 
+}
+
+/* Estilizando o menu de navegação */
+.menu-navegacao {
+    padding: 3px;
+    left: 0%;
+}
+
+.menu-navegacao ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-navegacao ul li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.navbar-text{
+    text-align: right;
+    padding: 20px;
+    color:#a9ffe0;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#0c5149;
+    border-radius: 10px;
+    min-width: 80px;
+    z-index: 1;
+    text-align: left;
+}
+
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+    color: #f7fffc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.dropdown-content a:hover {
+    background-color: #081324;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Mostrar o dropdown quando passar o mouse sobre o item do menu */
+.menu-navegacao ul li:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos para o botão Cancelar */
+.btn-primary-cancelar {
+    background-color: #0d192b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+}
+
+.btn-primary-cancelar:hover {
+    background-color: #0a8967;
+}
+
+/* Estilos para o botão Salvar */
+.btn-primary-salvar {
+    background-color: #0d192b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+}
+
+.btn-primary-salvar:hover {
+    background-color: #0a8967; 
+}
