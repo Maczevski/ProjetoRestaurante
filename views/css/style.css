@@ -195,6 +195,7 @@
 .botao-estoque:hover{
     background-color: #0a8967;
 }
+
 /* Estilos para a janela modal */
 .janela-estoque {
     display: none;
@@ -278,6 +279,24 @@
 
 
 .botaoAdicionarProduto:hover{
+    background-color: #0a8967;
+}
+
+.botaoEditarCardapio{
+    background-color: #0d192b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.botaoEditarCardapio:hover{
     background-color: #0a8967;
 }
 
@@ -372,3 +391,43 @@
 .text-description:focus{
     outline: none;
 }
+
+/* Cardapio */
+
+.cardapio-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.cardapio-table{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.cardapio-table td{
+    padding: 20px;
+}
+
+
+.botao-cardapio{
+    background-color: #0d192b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin: 30px;
+}
+
+.botao-cardapio:hover{
+    background-color: #0a8967;
+}
+
