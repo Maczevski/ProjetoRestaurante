@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" media="screen" href="css/bootstrap.min.css"> <!--CSS do Bootstrap-->
+    <link rel="stylesheet" href="css/style.css"> <!--Meu CSS-->
+    <title>Cardápio</title>
+  </head>
+
+  <body>
+    <div class="menu">
+        <ul>
+            <li><a href="bebidas.html">Bebidas</a></li>
+            <li><a href="doces.html"> Doces</a></li>
+            <li><a href="salgados.html">Salgados</a></li>
+            <li><a href="#">voltar</a></li>
+        </ul>
+    </div>
+   <!-- Barra de menu -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0d192b;">
+    <a class="navbar-brand" href="#">Restaurante Valorante</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Menu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Teste 1</a>
+                    <a class="dropdown-item" href="#">Teste 2</a>
+                    <a class="dropdown-item" href="#">Teste 3</a>
+                    <a class="dropdown-item" href="#">Teste 4</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <button id="toggleButton" class="btn btn-categorias">Categorias</button>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+        <!--Cardápio Banner-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col" id="cardapiobanner">
+                    <div id="textocardapiobanner">
+                        <h1>Bebidas</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+     <!--bebidas-->
+     <div class="container-fluid" id="nossocardapio">
+        <div class="row">
+            <!--Seção 01-->
+            <div class="col-md-6" style="background-color: #0d192b;">
+                <div class="row">
+                    <div id="titutloalmocooujantar" class="col" style="background-color: #0c5149;">
+                    </div>
+                </div>
+                <!--Prato 1-->
+                <div class="row">
+                    <div id="prato1" class="col-5" style="background-image: url(img/cardapio/salgados/misto-quente.jpg);">
+                    </div>
+                    <div id="pratodiv" class="col" style="background-color: #09c184;">
+                        <div id="pratodiv2">
+                            <b>Misto Quente</b>
+                            <br> unidade 
+                            <br>R$ 6,00
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <button id="editarButton1" class="btn btn-primary botao-editar" data-toggle="modal" data-target="#editarModal">Editar</button>
+                        <button class="botao-excluir" data-toggle="modal" data-target="#excluirModal">Excluir</button>
+                    </div>
+                </div>
+                <!--Prato 2-->
+                <div class="row">
+                    <div id="prato1" class="col-5" style="background-image: url(img/cardapio/salgados/queijo-quente.jpg);">
+                    </div>
+                    <div id="pratodiv" class="col" style="background-color: #09c184;">
+                        <div id="pratodiv2">
+                            <b>Queijo quente</b>
+                            <br> unidade
+                            <br>R$ 6,00
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <button id="editarButton1" class="btn btn-primary botao-editar" data-toggle="modal" data-target="#editarModal">Editar</button>
+                        <button class="botao-excluir" data-toggle="modal" data-target="#excluirModal">Excluir</button>
+                    </div>
+                </div>
+                <!--Prato 3-->
+                <div class="row">
+                    <div id="prato1" class="col-5" style="background-image: url(img/cardapio/salgados/sanduiche-de-flango.jpg);">
+                    </div>
+                    <div id="pratodiv" class="col" style="background-color: #09c184;">
+                        <div id="pratodiv2">
+                            <b>Sanduiche de frango</b>
+                            <br> unidade 
+                            <br>R$ 8,00
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <button id="editarButton1" class="btn btn-primary botao-editar" data-toggle="modal" data-target="#editarModal">Editar</button>
+                        <button class="botao-excluir" data-toggle="modal" data-target="#excluirModal">Excluir</button>
+                    </div>
+                </div>
+                <!--Prato 4-->
+                <div class="row">
+                    <div id="prato1" class="col-5" style="background-image: url(img/cardapio/salgados/sanduiche-de-carne.jpg);">
+                    </div>
+                    <div id="pratodiv" class="col" style="background-color: #09c184;">
+                        <div id="pratodiv2">
+                            <b>Sanduiche de Carne</b>
+                            <br> unidade
+                            <br>R$ 10,00
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <button id="editarButton1" class="btn btn-primary botao-editar" data-toggle="modal" data-target="#editarModal">Editar</button>
+                        <button class="botao-excluir" data-toggle="modal" data-target="#excluirModal">Excluir</button>
+                    </div>
+                </div>
+                <!--Prato 5-->
+                <div class="row">
+                    <div id="prato1" class="col-5" style="background-image: url(img/cardapio/salgados/tortinha-de-frango.jpg);">
+                    </div>
+                    <div id="pratodiv" class="col" style="background-color: #09c184;">
+                        <div id="pratodiv2">
+                            <b>Tortinha de frango</b>
+                            <br> Unidade
+                            <br>R$ 12,00
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <button id="editarButton1" class="btn btn-primary botao-editar" data-toggle="modal" data-target="#editarModal">Editar</button>
+                        <button class="botao-excluir" data-toggle="modal" data-target="#excluirModal">Excluir</button>
+                    </div>
+                </div>
+                  <!--Prato 5.2-->
+                  <div class="row">
+                    <div id="prato1" class="col-5" style="background-image: url(img/cardapio/salgados/pexels-geraud-pfeiffer-6605198.jpg);">
+                    </div>
+                    <div id="pratodiv" class="col" style="background-color: #09c184;">
+                        <div id="pratodiv2">
+                            <b>Quesadilla</b>
+                            <br> Unidade
+                            <br>R$ 7,00
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <button id="editarButton1" class="btn btn-primary botao-editar" data-toggle="modal" data-target="#editarModal">Editar</button>
+                        <button class="botao-excluir" data-toggle="modal" data-target="#excluirModal">Excluir</button>
+                    </div>
+                </div>
+
+                
+                <div class="row" style="background-color: #b3a9a1; height: 15px;">
+                </div>
+                <!--Fim das fatias-->
+            </div>
+            <!--porçoes-->
+            <div class="col-md-6" style="background-color:#0d192b;">
+                <div class="row">
+                    <div id="titutloalmocooujantar" class="col" style="background-color: #0c5149;">
+                    </div>
+                </div>
+                <!--Prato 6-->
+                <div class="row">
+                    <div id="prato1" class="col-5" style="background-image: url(img/cardapio/salgados/nugget.jpg);">
+                    </div>
+                    <div id="pratodiv" class="col" style="background-color: #09c184;">
+                        <div id="pratodiv2">
+                            <b>Nugget</b>
+                            <br>porção grande 
+                            <br>R$ 18,00
+                            <br>porção Pequena 
+                            <br>R$ 10,00
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <button id="editarButton1" class="btn btn-primary botao-editar" data-toggle="modal" data-target="#editarModal">Editar</button>
+                        <button class="botao-excluir" data-toggle="modal" data-target="#excluirModal">Excluir</button>
+                    </div>
+                </div>
+                <!--Prato 7-->
+                <div class="row">
+                    <div id="prato1" class="col-5" style="background-image: url(img/cardapio/salgados/avocado-tost.jpg);">
+                    </div>
+                    <div id="pratodiv" class="col" style="background-color: #09c184;">
+                        <div id="pratodiv2">
+                            <b>Avocado tost</b>
+                            <br>unidade
+                            <br>R$ 12,00
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <button id="editarButton1" class="btn btn-primary botao-editar" data-toggle="modal" data-target="#editarModal">Editar</button>
+                        <button class="botao-excluir" data-toggle="modal" data-target="#excluirModal">Excluir</button>
+                    </div>
+                </div>
+                <!--Prato 8-->
+                <div class="row">
+                    <div id="prato1" class="col-5" style="background-image: url(img/cardapio/salgados/pexels-andrea-mercado-12917975.jpg);">
+                    </div>
+                    <div id="pratodiv" class="col" style="background-color: #09c184;">
+                        <div id="pratodiv2">
+                            <b>Empanada</b>
+                            <br>unidade
+                            <br>R$ 6,00
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <button id="editarButton1" class="btn btn-primary botao-editar" data-toggle="modal" data-target="#editarModal">Editar</button>
+                        <button class="botao-excluir" data-toggle="modal" data-target="#excluirModal">Excluir</button>
+                    </div>
+                </div>
+                <!--Prato 9-->
+                <div class="row">
+                    <div id="prato1" class="col-5" style="background-image: url(img/cardapio/salgados/istockphoto-1092127938-1024x1024.jpg);">
+                    </div>
+                    <div id="pratodiv" class="col" style="background-color: #09c184;">
+                        <div id="pratodiv2">
+                            <b>Pão de queijo</b>
+                            <br>unidade
+                            <br>R$ 2,50
+                           
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <button id="editarButton1" class="btn btn-primary botao-editar" data-toggle="modal" data-target="#editarModal">Editar</button>
+                        <button class="botao-excluir" data-toggle="modal" data-target="#excluirModal">Excluir</button>
+                    </div>
+                </div>
+                <!--Prato 10-->
+                <div class="row">
+                    <div id="prato1" class="col-5" style="background-image: url(img/cardapio/salgados/istockphoto-1325418306-1024x1024.jpg);">
+                    </div>
+                    <div id="pratodiv" class="col" style="background-color: #09c184;">
+                        <div id="pratodiv2">
+                            <b>Chipa</b>
+                            <br>unidade
+                            <br>R$ 3,00
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <button id="editarButton1" class="btn btn-primary botao-editar" data-toggle="modal" data-target="#editarModal">Editar</button>
+                        <button class="botao-excluir" data-toggle="modal" data-target="#excluirModal">Excluir</button>
+                    </div>
+                </div>
+
+                <!--Prato 10.2-->
+                <div class="row">
+                    <div id="prato1" class="col-5" style="background-image: url(img/cardapio/salgados/istockphoto-510563660-1024x1024.jpg);">
+                    </div>
+                    <div id="pratodiv" class="col" style="background-color: #09c184;">
+                        <div id="pratodiv2">
+                            <b>esfiha
+                                carne,flango e queijo
+                            </b>
+                            <br>unidade
+                            <br>R$ 3,00
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <button id="editarButton1" class="btn btn-primary botao-editar" data-toggle="modal" data-target="#editarModal">Editar</button>
+                        <button class="botao-excluir" data-toggle="modal" data-target="#excluirModal">Excluir</button>
+                    </div>
+                </div>
+                <div class="row" style="background-color: #b3a9a1; height: 20px;">
+                </div>
+                <!--Fim dos pratos do almoço-->
+            </div>
+        </div>
+    </div>
+
+<!-- Modal de Editar -->
+<div class="modal fade" id="editarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Editar Item do Cardápio</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="nomePrato">Nome do Prato:</label>
+                        <input type="text" class="form-control" id="nomePrato" placeholder="Nome do Prato">
+                    </div>
+                    <div class="form-group">
+                        <label for="descricaoPrato">Descrição do Prato:</label>
+                        <textarea class="form-control" id="descricaoPrato" rows="3" placeholder="Descrição do Prato"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="precoPrato">Preço:</label>
+                        <input type="text" class="form-control" id="precoPrato" placeholder="Preço do Prato">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Salvar Alterações</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Excluir -->
+<div class="modal fade" id="excluirModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Confirmar Exclusão</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Conteúdo do modal de excluir aqui -->
+                <p>Tem certeza de que deseja excluir este item do cardápio?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-danger">Excluir</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--Rodapé-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="footer" class="col" style="background-color:#0d192b;">
+                  <div id="textofooter">
+                   
+                  </div>
+                </div>
+            </div>
+        </div>
+      
+        <!--Scripts-->
+        <script>
+            const toggleButton = document.getElementById("toggleButton");
+            const menu = document.querySelector(".menu");
+          
+            toggleButton.addEventListener("click", function () {
+              menu.classList.toggle("menu-hidden");
+            });
+          
+   
+            document.getElementById('editarButton1').addEventListener('click', function () {
+    
+            $('#editarModal').modal('show');
+            });
+
+          </script>
+        <script src="js/jquery-3.3.1.slim.js"></script>
+        <script src="js/pooper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" media="screen" href="css/bootstrap.min.css"> <!--CSS do Bootstrap-->
+    <link rel="stylesheet" href="css/style.css"> <!--Meu CSS-->
+    <title>Cardápio</title>
+  </head>
+  <body>
+    <div class="menu">
+        <ul>
+            <li><a href="bebidas.html">Bebidas</a></li>
+            <li><a href="doces.html"> Doces</a></li>
+            <li><a href="salgados.html">Salgados</a></li>
+            <li><a href="editar_doces.html">Editar</a></li>
+            <li><a href="#">voltar</a></li>
+        </ul>
+    </div>
+   <!-- Barra de menu -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0d192b;">
+    <a class="navbar-brand" href="#">Restaurante Valorante</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Menu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Teste 1</a>
+                    <a class="dropdown-item" href="#">Teste 2</a>
+                    <a class="dropdown-item" href="#">Teste 3</a>
+                    <a class="dropdown-item" href="#">Teste 4</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <button id="toggleButton" class="btn btn-categorias">Categorias</button>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+        <!--Cardápio Banner-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col" id="cardapiobanner">
+                    <div id="textocardapiobanner">
+                        <h1>Doces</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--doces-->
+        <div class="container-fluid" id="nossocardapio">
+            <div class="row">
+                <!--Seção 01-->
+                <div class="col-md-6" style="background-color: #0d192b;">
+                    <div class="row">
+                        <div id="titutloalmocooujantar" class="col" style="background-color: #0c5149;">
+                            <div id="titutloalmocooujantar2">
+                                <h5>Fatias</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Prato 1-->
+                    <div class="row">
+                        <div id="prato1" class="col-5" style="background-image: url(img/cardapio/doces/cheescake-frutas-vermelhas.jpg);">
+                        </div>
+                        <div id="pratodiv" class="col" style="background-color: #09c184;">
+                            <div id="pratodiv2">
+                                <b>Cheescake de frutas vermelhas</b>
+                                <br> Fatia 
+                                <br>R$ 15,00
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center">
+                            <button class="botao-fazer-pedido-pequeno" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido </button>
+                        </div>
+                    </div>
+                    <!--Prato 2-->
+                    <div class="row">
+                        <div id="prato1" class="col-5" style="background-image: url(img/cardapio/doces/bolo-chocolate.jpg);">
+                        </div>
+                        <div id="pratodiv" class="col" style="background-color: #09c184;">
+                            <div id="pratodiv2">
+                                <b>Bolo de chocolate</b>
+                                <br> Fatia 
+                                <br>R$ 6,00
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center">
+                            <button class="botao-fazer-pedido-pequeno" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido </button>
+                        </div>
+                    </div>
+                    <!--Prato 3-->
+                    <div class="row">
+                        <div id="prato1" class="col-5" style="background-image: url(img/cardapio/doces/rosquinha.jpg);">
+                        </div>
+                        <div id="pratodiv" class="col" style="background-color: #09c184;">
+                            <div id="pratodiv2">
+                                <b>Rosquinha</b>
+                                <br> unidade 
+                                <br>R$ 8,00
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center">
+                            <button class="botao-fazer-pedido-pequeno" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido </button>
+                        </div>
+                    </div>
+                    <!--Prato 4-->
+                    <div class="row">
+                        <div id="prato1" class="col-5" style="background-image: url(img/cardapio/doces/brawni-nozes.jpg);">
+                        </div>
+                        <div id="pratodiv" class="col" style="background-color: #09c184;">
+                            <div id="pratodiv2">
+                                <b>brawnie</b>
+                                <br> Fatia 
+                                <br>R$ 6,00
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center">
+                            <button class="botao-fazer-pedido-pequeno" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido </button>
+                        </div>
+                    </div>
+                    <!--Prato 5-->
+                    <div class="row">
+                        <div id="prato1" class="col-5" style="background-image: url(img/cardapio/doces/torta-frutas-vermelhas.jpg);">
+                        </div>
+                        <div id="pratodiv" class="col" style="background-color: #09c184;">
+                            <div id="pratodiv2">
+                                <b>Torta de frutas vermelhas</b>
+                                <br> Fatia 
+                                <br>R$ 12,00
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center">
+                            <button class="botao-fazer-pedido-pequeno" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido </button>
+                        </div>
+                    </div>
+                    <div class="row" style="background-color: #b3a9a1; height: 15px;">
+                    </div>
+                    <!--Fim das fatias-->
+                </div>
+                <!--porçoes-->
+                <div class="col-md-6" style="background-color:#0d192b;">
+                    <div class="row">
+                        <div id="titutloalmocooujantar" class="col" style="background-color: #0c5149;">
+                            <div id="titutloalmocooujantar2">
+                                <h5>Porções</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Prato 6-->
+                    <div class="row">
+                        <div id="prato1" class="col-5" style="background-image: url(img/cardapio/doces/cookie.jpg);">
+                        </div>
+                        <div id="pratodiv" class="col" style="background-color: #09c184;">
+                            <div id="pratodiv2">
+                                <b>Cookie</b>
+                                <br>porção grande 6uni
+                                <br>R$ 18,00
+                                <br>porção Pequena 3uni
+                                <br>R$ 10,00
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center">
+                            <button class="botao-fazer-pedido-pequeno" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Pequeno)</button>
+                            <button class="botao-fazer-pedido-grande" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Grande)</button>
+                        </div>
+                    </div>
+                    <!--Prato 7-->
+                    <div class="row">
+                        <div id="prato1" class="col-5" style="background-image: url(img/cardapio/doces/macaron.jpg);">
+                        </div>
+                        <div id="pratodiv" class="col" style="background-color: #09c184;">
+                            <div id="pratodiv2">
+                                <b>Macaron</b>
+                                <br>porção grande 6uni
+                                <br>R$ 22,00
+                                <br>porção Pequena 3uni
+                                <br>R$ 12,00
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center">
+                            <button class="botao-fazer-pedido-pequeno" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Pequeno)</button>
+                            <button class="botao-fazer-pedido-grande" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Grande)</button>
+                        </div>
+                    </div>
+                    <!--Prato 8-->
+                    <div class="row">
+                        <div id="prato1" class="col-5" style="background-image: url(img/cardapio/doces/cupcake-verde.jpg);">
+                        </div>
+                        <div id="pratodiv" class="col" style="background-color: #09c184;">
+                            <div id="pratodiv2">
+                                <b>Cupcake</b>
+                                <br>porção grande 4uni
+                                <br>R$ 15,00
+                                <br>porção Pequena 2uni
+                                <br>R$ 8,00
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center">
+                            <button class="botao-fazer-pedido-pequeno" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Pequeno)</button>
+                            <button class="botao-fazer-pedido-grande" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Grande)</button>
+                        </div>
+                    </div>
+                    <!--Prato 9-->
+                    <div class="row">
+                        <div id="prato1" class="col-5" style="background-image: url(img/cardapio/doces/tortinha-de-laranja.jpg);">
+                        </div>
+                        <div id="pratodiv" class="col" style="background-color: #09c184;">
+                            <div id="pratodiv2">
+                                <b>tortinha de laranja</b>
+                                <br>porção grande 4uni
+                                <br>R$ 23,00
+                                <br>porção Pequena 2uni
+                                <br>R$ 13,00
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center">
+                            <button class="botao-fazer-pedido-pequeno" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Pequeno)</button>
+                            <button class="botao-fazer-pedido-grande" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Grande)</button>
+                        </div>
+                    </div>
+                    <!--Prato 10-->
+                    <div class="row">
+                        <div id="prato1" class="col-5" style="background-image: url(img/cardapio/doces/biscoitos-com-geleia.jpg);">
+                        </div>
+                        <div id="pratodiv" class="col" style="background-color: #09c184;">
+                            <div id="pratodiv2">
+                                <b>biscoitos com geleia</b>
+                                <br>porção grande 6uni
+                                <br>R$ 16,00
+                                <br>porção Pequena 3uni
+                                <br>R$ 10,00
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center">
+                            <button class="botao-fazer-pedido-pequeno" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Pequeno)</button>
+                            <button class="botao-fazer-pedido-grande" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Grande)</button>
+                        </div>
+                    </div>
+                    <div class="row" style="background-color: #b3a9a1; height: 20px;">
+                    </div>
+                    <!--Fim dos pratos do almoço-->
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de Pedido -->
+<div class="modal fade" id="pedidoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Fazer Pedido</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="mesa">Mesa:</label>
+                        <input type="text" class="form-control" id="mesa" placeholder="Número da Mesa">
+                    </div>
+                    <div class="form-group">
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" class="form-control" id="quantidade" placeholder="Quantidade">
+                    </div>
+                    <div class="form-group">
+                        <label for="observacoes">Observações:</label>
+                        <textarea class="form-control" id="observacoes" rows="3" placeholder="Digite suas observações"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" onclick="enviarPedido()">Enviar Pedido</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--Rodapé-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="footer" class="col" style="background-color:#0d192b;">
+                  <div id="textofooter">
+                   
+                  </div>
+                </div>
+            </div>
+        </div>
+      
+        <!--Scripts-->
+        <script>
+            const toggleButton = document.getElementById("toggleButton");
+            const menu = document.querySelector(".menu");
+          
+            toggleButton.addEventListener("click", function () {
+              menu.classList.toggle("menu-hidden");
+            });
+          </script>
+        <script src="js/jquery-3.3.1.slim.js"></script>
+        <script src="js/pooper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </footer>
+  </body>
+</html>
