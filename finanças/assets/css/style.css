@@ -1,0 +1,153 @@
+
+/* styles.css */
+body {
+    background-color:#0c5149; /* Substitua pelo código de cor desejado */
+}
+
+.menu-hidden {
+    display: none;
+    width: 200px;
+    background-color: #f0f0f0;
+    color: #0d192b;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    height: 100%;
+    transition: left 0.3s ease;
+}
+
+.menu-shown {
+    left: 0;
+}
+.container{
+    background-color:#ffffff;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* Estilo para a barra de navegação personalizada */
+.navbar-custom {
+    background-color: #0d192b;
+}
+
+/* Estilo para o título */
+.titulo-registro {
+    text-align: left;
+    margin-top: 100px; /* Ajuste a margem superior conforme necessário */
+    margin-left: 30px; /* Ajuste a margem esquerda conforme necessário */
+}
+
+/*Navbar*/
+.navbar{
+    width: 100%;  
+    background-color: #0d192b;
+    height: 70px;
+    position: fixed;
+    top: 0; /* Fixar no topo da tela */
+    left: 0; /* Fixar no lado esquerdo da tela */
+    width: 100%; /* Largura total */
+    color: white;
+    z-index: 1000; 
+}
+
+/* Estilizando o menu de navegação */
+.menu-navegacao {
+    padding: 3px;
+    left: 0%;
+}
+
+.menu-navegacao ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-navegacao ul li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.navbar-text{
+    text-align: right;
+    padding: 20px;
+    color:#a9ffe0;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#0c5149;
+    border-radius: 10px;
+    min-width: 80px;
+    z-index: 1;
+    text-align: left;
+}
+
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+    color: #f7fffc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.dropdown-content a:hover {
+    background-color: #081324;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Mostrar o dropdown quando passar o mouse sobre o item do menu */
+.menu-navegacao ul li:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilo para o botão de abertura do modal */
+#openModalBtn {
+    background-color:#0d192b; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    margin-left: 20px;
+    margin-right: 20px; /* Espaçamento opcional do lado direito do botão */
+    appearance: none; 
+}
+
+/* Estilo para o modal */
+.modal {
+  background-color: #0d192b;
+}
+
+/* Estilo para o cabeçalho do modal */
+.modal-header {
+    background-color: #0a8967; 
+    color: #fff; 
+}
+
+/* Estilo para o botão "Fechar" no cabeçalho do modal */
+.modal-header button.close {
+    color: #fff; 
+}
+
+/* Estilo para o corpo do modal */
+.modal-body {
+    padding: 20px; 
+}
+
+/* Estilo para o botão "Registrar" dentro do modal */
+.modal-body button.btn-primary {
+    background-color: #0a8967; 
+    color: #fff; 
+}
+/* Estilo para o formulário dentro do modal */
+.modal-body form {
+    margin: 0; /* Remover margens do formulário */
+}
