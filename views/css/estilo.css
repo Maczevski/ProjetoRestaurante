@@ -2,15 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: monospace;
 }
 
-
-body{
-    height: 100vh;
-    background-color: #0a8967;
-
-}
 
 nav.menu-fin{
     width: 200px;
