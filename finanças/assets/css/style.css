@@ -113,12 +113,27 @@ body {
 }
 
 /* Estilo para o botão de abertura do modal */
-#openModalBtn {
-    background-color:#0d192b; /* Cor de fundo azul */
-    color: #fff; /* Cor do texto branco */
-    margin-left: 20px;
-    margin-right: 20px; /* Espaçamento opcional do lado direito do botão */
-    appearance: none; 
+
+.modal-button:hover{
+    background-color: #0a8967;
+}
+.modal-button{
+    background-color: #0d192b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin: 30px;
+}
+
+.container-button{
+    position: relative;
+    text-align: center;
 }
 
 /* Estilo para o modal */
