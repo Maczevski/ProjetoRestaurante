@@ -10,12 +10,16 @@ nav.menu-fin{
     height: 100%;
     background-color: #0d192b;
     padding: 40px 0 40px 1%;
-    box-shadow: 3px 0 0 #3280f5;
+    box-shadow: 3px 0 0 #0a8967;
 
     position: fixed;
     top: 0;
     left: 0;
     overflow: hidden;
+}
+
+.txt-link{
+    color: #07f9a2;
 }
 
 
@@ -34,7 +38,7 @@ ul li.item-menu{
     transition: .2s;
 }
 ul li.item-menu:hover{
-    background-color:#0ea4db;
+    background-color:#09c184;
    
 }
 ul{
