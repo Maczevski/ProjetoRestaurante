@@ -29,14 +29,14 @@ hr.escuro {
 
 @media (max-width: 996px){ 
     .col-lg-6.reverse{
-      order: 2;
+    order: 2;
     }
 }
 
 a, a:visited, a:focus, a:active{ text-decoration: none; color: inherit; }
 a:hover { color: #ffffff; } 
 
-/*Seção Nosso Cardárpio Pagina Inicial*/
+/*Cardárpio Pagina Inicial*/
 div#image1{
     background-image: url(../img/prato-1.jpg);
     background-repeat: no-repeat;

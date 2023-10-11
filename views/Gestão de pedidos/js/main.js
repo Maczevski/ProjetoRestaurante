@@ -5,3 +5,4 @@ function enviarPedido() {
     // Feche o modal após o pedido ser enviado ou processado
     $('#pedidoModal').modal('hide');
 }
+
