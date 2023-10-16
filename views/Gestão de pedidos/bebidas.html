@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="pt-br">
-  <head>
+<html lang="pt-br"> 
+    <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" media="screen" href="css/bootstrap.min.css"> <!--CSS do Bootstrap-->
     <link rel="stylesheet" href="css/style.css"> <!--Meu CSS-->
     <title>Cardápio</title>
-  </head>
-  <body>
+    </head>
+    <body>
     <div class="menu">
         <ul>
             <li><a href="bebidas.html">Bebidas</a></li>
@@ -17,7 +17,7 @@
             <li><a href="/views/menu.html">Voltar</a></li>
         </ul>
     </div>
-   <!-- Barra de menu -->
+    <!-- Barra de menu -->
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0d192b;">
     <a class="navbar-brand" href="#">Restaurante Valorante</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
@@ -47,15 +47,15 @@
     </div>
 </nav>
 
-        <!--Cardápio Banner-->
-        <div class="container-fluid">
-            <div class="row">
+<!--Cardápio Banner-->
+<div class="container-fluid">
+    <div class="row">
                 <div class="col" id="cardapiobanner">
                     <div id="textocardapiobanner">
                         <h1>Bebidas</h1>
                     </div>
                 </div>
-            </div>
+        </div>
         </div>
         <!--bebidas-->
         <div class="container-fluid" id="nossocardapio">
@@ -68,63 +68,60 @@
                                 <h5>Quentes</h5>
                             </div>
                         </div>
+        </div>
+        <!--Prato 1-->
+        <div class="row">
+            <div id="prato1" class="col-5" style="background-image: url(img/cardapio/cappucino.jpg);"></div>
+                <div id="pratodiv" class="col" style="background-color: #09c184;">
+                    <div id="pratodiv2">
+                        <b>Capuccino</b>
+                        <br> Grande 500ml
+                        <br>R$ 12,00
+                        <br>Pequeno 300ml
+                        <br>R$ 6,00
                     </div>
-                    <!--Prato 1-->
-                    <div class="row">
-                        <div id="prato1" class="col-5" style="background-image: url(img/cardapio/cappucino.jpg);">
-                        </div>
-                        <div id="pratodiv" class="col" style="background-color: #09c184;">
-                            <div id="pratodiv2">
-                                <b>Capuccino</b>
-                                <br> Grande 500ml
-                                <br>R$ 12,00
-                                <br>Pequeno 300ml
-                                <br>R$ 6,00
-                            </div>
-                        </div>
-                        <div class="col d-flex align-items-center">
-                            <button class="botao-fazer-pedido-pequeno" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Pequeno)</button>
-                            <button class="botao-fazer-pedido-grande" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Grande)</button>
-                        </div>
-                    </div>
+                </div>
+                <div class="col d-flex align-items-center">
+                    <button class="botao-fazer-pedido-pequeno" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Pequeno)</button>
+                    <button class="botao-fazer-pedido-grande" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Grande)</button>
+                </div>
+    </div>
                     <!--Prato 2-->
-                    <div class="row">
-                        <div id="prato1" class="col-5" style="background-image: url(img/cardapio/Café-latte.jpg);">
-                        </div>
-                        <div id="pratodiv" class="col" style="background-color: #09c184;">
-                            <div id="pratodiv2">
-                                <b>Café latte</b>
-                                <br> Grande 500ml
-                                <br>R$ 15,00
-                                <br>Pequeno 300ml
-                                <br>R$ 10,00
-                            </div>
-                        </div>
-                        <div class="col d-flex align-items-center">
-                            <button class="botao-fazer-pedido-pequeno" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Pequeno)</button>
-                            <button class="botao-fazer-pedido-grande" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Grande)</button>
-                        </div>
-                    </div>
-                    <!--Prato 3-->
-                    <div class="row">
-                        <div id="prato1" class="col-5" style="background-image: url(img/cardapio/espresso.jpg);">
-                        </div>
-                        <div id="pratodiv" class="col" style="background-color: #09c184;">
-                            <div id="pratodiv2">
+    <div class="row">
+        <div id="prato1" class="col-5" style="background-image: url(img/cardapio/Café-latte.jpg);"></div>
+            <div id="pratodiv" class="col" style="background-color: #09c184;">
+                <div id="pratodiv2">
+                    <b>Café latte</b>
+                    <br> Grande 500ml
+                    <br>R$ 15,00
+                    <br>Pequeno 300ml
+                    <br>R$ 10,00
+                </div>
+            </div>
+            <div class="col d-flex align-items-center">
+                <button class="botao-fazer-pedido-pequeno" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Pequeno)</button>
+                <button class="botao-fazer-pedido-grande" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Grande)</button>
+            </div>
+    </div>
+    <!--Prato 3-->
+    <div class="row">
+        <div id="prato1" class="col-5" style="background-image: url(img/cardapio/espresso.jpg);"></div>
+            <div id="pratodiv" class="col" style="background-color: #09c184;">
+                        <div id="pratodiv2">
                                 <b>Expresso</b>
                                 <br> Grande 400ml
                                 <br>R$ 10,00
                                 <br>Pequeno 300ml
                                 <br>R$ 6,00
-                            </div>
                         </div>
-                        <div class="col d-flex align-items-center">
-                            <button class="botao-fazer-pedido-pequeno" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Pequeno)</button>
-                            <button class="botao-fazer-pedido-grande" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Grande)</button>
-                        </div>
+                </div>
+                    <div class="col d-flex align-items-center">
+                        <button class="botao-fazer-pedido-pequeno" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Pequeno)</button>
+                        <button class="botao-fazer-pedido-grande" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Grande)</button>
                     </div>
-                    <!--Prato 4-->
-                    <div class="row">
+    </div>
+    <!--Prato 4-->
+    <div class="row">
                         <div id="prato1" class="col-5" style="background-image: url(img/cardapio/Macchiato.jpg);">
                         </div>
                         <div id="pratodiv" class="col" style="background-color: #09c184;">
@@ -140,7 +137,7 @@
                             <button class="botao-fazer-pedido-pequeno" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Pequeno)</button>
                             <button class="botao-fazer-pedido-grande" data-toggle="modal" data-target="#pedidoModal">Fazer Pedido (Grande)</button>
                         </div>
-                    </div>
+    </div>
                     <!--Prato 5-->
                     <div class="row">
                         <div id="prato1" class="col-5" style="background-image: url(img/cardapio/chocolate-quente.jpg);">
@@ -303,19 +300,17 @@
     </div>
 </div>
 
-      
-        <!--Scripts-->
+<!--Scripts-->
         <script>
             const toggleButton = document.getElementById("toggleButton");
-            const menu = document.querySelector(".menu");
-          
+            const menu = document.querySelector(".menu")
             toggleButton.addEventListener("click", function () {
-              menu.classList.toggle("menu-hidden");
+            menu.classList.toggle("menu-hidden");
             });
-          </script>
+        </script>
         <script src="js/jquery-3.3.1.slim.js"></script>
         <script src="js/pooper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
-  </body>
+</body>
 </html>
