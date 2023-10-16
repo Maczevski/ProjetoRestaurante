@@ -49,15 +49,25 @@ function adicionarProduto() {
 
         cell1.innerHTML = nomeProduto;
         cell2.innerHTML = '<input class="table-content centralizado" type="number" value="' + quantidadeProduto + '" min="0">';
-        cell3.innerHTML = '<button onclick="excluirProduto(this)"><img src="img/x.png" alt="x" class="x"></button>';
+        cell3.innerHTML = '<button><img src="img/x.png" alt="x" class="x"></button>';
         
         document.getElementById('campoNome').value = '';
         document.getElementById('campoQntd').value = '';
     }
 }
 
+botaoAdicionarProduto.addEventListener("click", adicionarProduto);
+
 function excluirProduto(button) {
     var row = button.parentNode.parentNode;
     row.parentNode.removeChild(row);
 }
+
+const botao_excluir = document.querySelectorAll(".excluir-produto-button");
+botao_excluir.forEach(function(excluir){
+    excluir.addEventListener("click", function() {
+        excluirProduto(this);
+    });
+});
+
 

@@ -30,7 +30,7 @@
             Controle de estoque
         </h2> 
         <table class="tabela-estoque" id="tabela_estoque">
-      
+
         <thead>
             <tr>
                 <th class="produto">Produto</th>
@@ -41,53 +41,53 @@
         <tbody>
             <tr>
                 <td class="nome-produto">Ovo</td>
-                <td class="quantidade""><input class="table-content" type="number" value="1" min="0"></td>
-                <td class="excluir-produto"><button onclick="excluirProduto(this)"><img src="img/x.png" alt="x" class="x"></button></td>
+                <td class="quantidade"><input class="table-content" type="number" value="1" min="0"></td>
+                <td class="excluir-produto"><button class="excluir-produto-button"><img src="img/x.png" alt="x" class="x"></button></td>
             </tr>
             <tr>
                 <td class="nome-produto">Pão</td>
                 <td class="quantidade"><input class="table-content" type="number" value="2" min="0"></td>
-                <td class="excluir-produto"><button onclick="excluirProduto(this)"><img src="img/x.png" alt="x" class="x"></button></td>
+                <td class="excluir-produto"><button class="excluir-produto-button"><img src="img/x.png" alt="x" class="x"></button></td>
             </tr>
             <tr>
                 <td class="nome-produto">Farinha de trigo</td>
                 <td class="quantidade"><input class="table-content" type="number" value="3" min="0"></td>
-                <td class="excluir-produto"><button onclick="excluirProduto(this)"><img src="img/x.png" alt="x" class="x"></button></td>
+                <td class="excluir-produto"><button class="excluir-produto-button"><img src="img/x.png" alt="x" class="x"></button></td>
             </tr>
             <tr>
                 <td class="nome-produto">Tomate</td>
                 <td class="quantidade"><input class="table-content" type="number" value="4" min="0"></td>
-                <td class="excluir-produto"><button onclick="excluirProduto(this)"><img src="img/x.png" alt="x" class="x"></button></td>
+                <td class="excluir-produto"><button class="excluir-produto-button"><img src="img/x.png" alt="x" class="x"></button></td>
             </tr>
             <tr>
                 <td class="nome-produto">Coca-cola</td>
                 <td class="quantidade"><input class="table-content" type="number" value="5" min="0"></td>
-                <td class="excluir-produto"><button onclick="excluirProduto(this)"><img src="img/x.png" alt="x" class="x"></button></td>
+                <td class="excluir-produto"><button class="excluir-produto-button"><img src="img/x.png" alt="x" class="x"></button></td>
             </tr>
             <tr>
                 <td class="nome-produto">Alface(kg)</td>
                 <td class="quantidade""><input class="table-content" type="number" value="6" min="0"></td>
-                <td class="excluir-produto"><button onclick="excluirProduto(this)"><img src="img/x.png" alt="x" class="x"></button></td>
+                <td class="excluir-produto"><button class="excluir-produto-button"><img src="img/x.png" alt="x" class="x"></button></td>
             </tr>
             <tr>
                 <td class="nome-produto">Carne moída(kg)</td>
                 <td class="quantidade"><input class="table-content" type="number" value="7" min="0"></td>
-                <td class="excluir-produto"><button onclick="excluirProduto(this)"><img src="img/x.png" alt="x" class="x"></button></td>
+                <td class="excluir-produto"><button class="excluir-produto-button"><img src="img/x.png" alt="x" class="x"></button></td>
             </tr>
             <tr>
                 <td class="nome-produto">Laranja</td>
                 <td class="quantidade"><input class="table-content" type="number" value="8" min="0"></td>
-                <td class="excluir-produto"><button onclick="excluirProduto(this)"><img src="img/x.png" alt="x" class="x"></button></td>
+                <td class="excluir-produto"><button class="excluir-produto-button"><img src="img/x.png" alt="x" class="x"></button></td>
             </tr>
             <tr>
                 <td class="nome-produto">Schweppes</td>
                 <td class="quantidade"><input class="table-content" type="number" value="9" min="0"></td>
-                <td class="excluir-produto"><button onclick="excluirProduto(this)"><img src="img/x.png" alt="x" class="x"></button></td>
+                <td class="excluir-produto"><button class="excluir-produto-button"><img src="img/x.png" alt="x" class="x"></button></td>
             </tr>
             <tr>
                 <td class="nome-produto">Batata(kg)</td>
                 <td class="quantidade"><input class="table-content" type="number" value="10" min="0"></td>
-                <td class="excluir-produto"><button onclick="excluirProduto(this)"><img src="img/x.png" alt="x" class="x"></button></td>
+                <td class="excluir-produto"><button  class="excluir-produto-button"><img src="img/x.png" alt="x" class="x"></button></td>
             </tr>
             
         </tbody>
@@ -108,7 +108,7 @@
         <label for="campoQntd" class="sub-janela">Quantidade:</label>
         <input class="inserir-produto" type="number" min="0" id="campoQntd" placeholder="Digite a quantidade do produto">
         <div class="centered-bt">
-            <button class="botaoAdicionarProduto" id="botaoAdicionarProduto" onclick="adicionarProduto()">Adicionar produto</button>
+            <button class="botaoAdicionarProduto" id="botaoAdicionarProduto">Adicionar produto</button>
         </div>
     </div>
 </div>

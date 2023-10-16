@@ -69,3 +69,8 @@ ul.img{
     left: 50%;
     backdrop-filter: #62c577;
 }
+
+.grafico{
+    width: 400px;
+    height: 200px;
+}
