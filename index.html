@@ -7,34 +7,43 @@
     <title>Login</title>
 </head>
 <body>
-   <div class="main-login">
-     <div class="left-login">
-        <h1> Faça Login <br> Restaurant Valorant </h1>
-        <img src ="views/css/chef.svg"  class="left-image" alt="chef animação">
-        
-     </div>
-     <div class="right-login">
-        <div class="card-login">
-            <h1>LOGIN</h1>
-            <div class="textfield">
-                <label for="usuario">Usuário</label>
-                <input type="text" name="usuario" placeholder="Usuário">
-            </div> 
-            <div class="textfield">
-                <label for="senha">Senha</label>
-                <input type="password" name="senha" placeholder="Senha">
-                <label for="senha">Esqueceu sua senha?</label>
-            </div>
-            <button class="btn-login" id="loginButton">Login</button>
+    <div class="main-login">
+        <div class="left-login">
+            <h1> Faça Login <br> Restaurant Valorant </h1>
+            <img src="views/css/chef.svg" class="left-image" alt="chef animação">
         </div>
-       </div>
-   </div>        
-   <script>
-    document.getElementById("loginButton").addEventListener("click", function() {
-        window.location.href= "views/menu.html";
-    });
-</script>
-
-
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" placeholder="Usuário">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha">
+                    <br>
+                    <a href="#" onclick="forgotPassword()">Esqueceu sua senha?</a>
+                </div>
+                <button class="btn-login" id="loginButton">Login</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function forgotPassword() {
+            var userInput = prompt("Por favor, digite seu email:");
+            if (userInput !== null && userInput !== "") {
+                alert("Um email foi enviado para " + userInput);
+            } else if (userInput !== null && userInput === "") {
+                alert("Por favor, digite um email válido.");
+                forgotPassword();
+            } else {
+                alert("Operação cancelada");
+            }
+        }
+        document.getElementById("loginButton").addEventListener("click", function () {
+            window.location.href = "views/menu.html";
+        });
+    </script>
 </body>
 </html>
