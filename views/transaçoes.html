@@ -1,160 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro Financeiro do Restaurante</title>
-    <!-- Inclua a folha de estilo do Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/finanças/assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <link rel="stylesheet" href="\finanças\assets\css\style.css">
 </head>
 <body>
-    <!--NavBar-->
-    <div class="navbar">
-        <nav class="menu-navegacao">
-            <ul>
-                <li class="Titulo">Restaurante Valorant</li>
-                <li class="dropdown">
-                    <a class="navbar-text" href="menu.html">Menu</a>
-                    <ul class="dropdown-content">
-                       <li><a href="/views/Gestão de pedidos/bebidas.html">Pedidos</a></li>
-                       <li><a href="/views/financeiro.html">Financeiro</a></li>
-                       <li><a href="cadastro.html.html">Cadastro de funcionario</li>
-                       <li><a href="/views/transaçoes.html">Registro de gastos</a></li>
-                       <li><a href="CadastroItens.html">Cadastro de produtos</a></li>
-                       <li><a href="ControleEstoque.html">Controle de estoque</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-
+  <div class="navbar">
+    <nav class="menu-navegacao">
+        <ul>
+            <li class="Titulo">Restaurante Valorant</li>
+            <li class="dropdown">
+                <a class="navbar-text" href="menu.html">Menu</a>
+                <ul class="dropdown-content">
+                   <li><a href="/views/Gestão de pedidos/bebidas.html">Pedidos</a></li>
+                   <li><a href="/views/financeiro.html">Financeiro</a></li>
+                   <li><a href="cadastro.html.html">Cadastro de funcionario</li>
+                   <li><a href="/views/transaçoes.html">Registro de vendas</a></li>
+                   <li><a href="CadastroItens.html">Cadastro de produtos</a></li>
+                   <li><a href="ControleEstoque.html">Controle de estoque</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 </div>
-<!--tabela-->
-    <div class="container mt-5">
-        <h1 class="titulo-registro">Registro de gastos</h1>
-        <div class="mt-4">
-            <table class="table">
-            <thead>
-                <tr>
-                    <th>Data</th>
-                    <th>Descrição</th>
-                    <th>Tipo</th>
-                    <th>Valor</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- registro financeiro fictício -->
-                <tr>
-                    <td>2023-09-20</td>
-                    <td>Compra de ingredientes</td>
-                    <td>Despesa</td>
-                    <td>$500.00</td>
-                </tr>
-               
-                <tr>
-                    <td>2023-09-18</td>
-                    <td>Compra de ingredientes</td>
-                    <td>Despesa</td>
-                    <td>$500.00</td>
-                </tr>
-            
-                <tr>
-                    <td>2023-09-15</td>
-                    <td>Compra de forma</td>
-                    <td>Despesa</td>
-                    <td>$252.00</td>
-                </tr>
-                <tr>
-                    <td>2023-09-07</td>
-                    <td>pagamento de funcionario</td>
-                    <td>Despesa</td>
-                    <td>$1.355</td>
-                </tr>
-                <tr>
-                    <td>2023-09-07</td>
-                    <td>Compra de platos e copos</td>
-                    <td>Despesa</td>
-                    <td>$135.00</td>
-                </tr>
-                <tr>
-                    <td>2023-09-06</td>
-                    <td>pagamento de funcionario</td>
-                    <td>Despesa</td>
-                    <td>$1.355</td>
-                </tr>
-                 <tr>
-                    <td>2023-09-05</td>
-                    <td>Compra de ingredientes</td>
-                    <td>Despesa</td>
-                    <td>$600.00</td>
-                </tr>
-                <tr>
-                    <td>valor total</td>
-                    <td></td>
-                    <td></td>
-                    <td>$4.697</td>
-                </tr>
-            </tbody>
-        </table>
-        </div>
+  <main>
+    <div class="resume">
+      <div>
+        Entradas: R$
+        <span class="incomes">0.00</span>
+      </div>
+      <div>
+        Saídas: R$
+        <span class="expenses">0.00</span>
+      </div>
+      <div>
+        Total: R$
+        <span class="total">0.00</span>
+      </div>
     </div>
-
-     <!-- Botão para abrir o modal -->
-     <div class="container-button">
-        <button id="openModalBtn" class="modal-button" data-toggle="modal" data-target="#myModal">Registrar</button>
-     </div>
-
-<!-- Modal de Registro Financeiro -->
-<div class="modal fade" id="myModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Adicionar Registro</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body">
-                <!-- Conteúdo do formulário de registro -->
-                <form action="processar_registro.php" method="post">
-                    <div class="form-group">
-                        <label for="data">Data:</label>
-                        <input type="date" class="form-control" id="data" name="data" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="descricao">Descrição:</label>
-                        <input type="text" class="form-control" id="descricao" name="descricao" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="tipo">Tipo de Transação:</label>
-                        <select class="form-control" id="tipo" name="tipo">
-                            <option value="receita">pagamentos</option>
-                            <option value="despesa">Despesa</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="valor">Valor:</label>
-                        <input type="number" class="form-control" id="valor" name="valor" step="0.01" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Registrar</button>
-                </form>
-            </div>
-        </div>
+    <!-- Inicio - incluir items -->
+    <div class="newItem">
+      <div class="divDesc">
+        <label for="desc">Descrição</label>
+        <input type="text" id="desc" />
+      </div>
+      <div class="divAmount">
+        <label for="amount">Valor</label>
+        <input type="number" id="amount" />
+      </div>
+      <div class="divType">
+        <label for="type">Tipo</label>
+        <select id="type">
+          <option>Entrada</option>
+          <option>Saída</option>
+        </select>
+      </div>
+      <button id="btnNew">Incluir</button>
     </div>
-</div>
+    <!-- Fim - incluir items -->
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th class="columnAmount">Valor</th>
+            <th class="columnType">Tipo</th>
+            <th class="columnAction"></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+  </main>  
 
-    <!-- Inclua o jQuery e o JavaScript do Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-    <script>
-        const toggleButton = document.getElementById("toggleButton");
-        const menuLateral = document.getElementById("menuLateral");
-      
-        toggleButton.addEventListener("click", function () {
-          menuLateral.classList.toggle("menu-hidden");
-        });
-    </script>
+  <script src="\finanças\script.js"></script>
 </body>
 </html>

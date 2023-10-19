@@ -1,40 +1,107 @@
-// Obtém o modal e os botões de abertura e fechamento
-var modal = document.getElementById("myModal");
-var openModalBtn = document.getElementById("openModalBtn");
-var closeModalBtn = document.getElementById("closeModalBtn");
+const tbody = document.querySelector("tbody");
+const descItem = document.querySelector("#desc");
+const amount = document.querySelector("#amount");
+const type = document.querySelector("#type");
+const btnNew = document.querySelector("#btnNew");
 
-// Função para abrir o modal
-function abrirModal() {
-    modal.style.display = "block";
+const incomes = document.querySelector(".incomes");
+const expenses = document.querySelector(".expenses");
+const total = document.querySelector(".total");
+
+let items;
+
+btnNew.onclick = () => {
+  if (descItem.value === "" || amount.value === "" || type.value === "") {
+    return alert("Preencha todos os campos!");
+  }//ao clicar faer tal coisa
+
+
+  items.push({
+    desc: descItem.value,
+    amount: Math.abs(amount.value).toFixed(2),
+    type: type.value,
+  });//push puxa os itens como pilha em C
+
+  setItensBD();
+
+  loadItens();
+
+  descItem.value = "";
+  amount.value = "";
+};
+
+function deleteItem(index) {
+  items.splice(index, 1);
+  setItensBD();
+  loadItens();
 }
 
-// Função para fechar o modal
-function fecharModal() {
-    modal.style.display = "none";
-}
-function fecharModal() {
-    modal.style.display = "none";
-}
+function insertItem(item, index) {
+  let tr = document.createElement("tr");
 
-// Adiciona eventos de clique aos botões de abertura e fechamento
-openModalBtn.addEventListener("click", abrirModal);
-closeModalBtn.addEventListener("click", fecharModal);
+  tr.innerHTML = `
+    <td>${item.desc}</td>
+    <td>R$ ${item.amount}</td>
+    <td class="columnType">${
+      item.type === "Entrada"
+        ? '<i class="bx bxs-chevron-up-circle"style="color: #38E54D;"></i>'
+        : '<i class="bx bxs-chevron-down-circle"></i>'
+    }</td>
+   <td class="columnAction">
+      <button onclick="deleteItem(${index})"><i class="fas fa-trash"style="color: #0d192b;" ></i></button>
+    </td>
+  `;
+  
 
-// Fecha o modal se o usuário clicar fora dele
-window.addEventListener("click", function (event) {
-    if (event.target === modal) {
-        fecharModal();
-    }
-});
-
-// Obtém o botão de alternância e o menu lateral
-const toggleButton = document.getElementById("toggleButton");
-const menuLateral = document.getElementById("menuLateral");
-
-// Função para alternar a exibição do menu lateral
-function alternarMenuLateral() {
-    menuLateral.classList.toggle("menu-shown");
+  tbody.appendChild(tr);
 }
 
-// Adiciona um evento de clique ao botão de alternância
-toggleButton.addEventListener("click", alternarMenuLateral);
+function loadItens() {
+  items = getItensBD();
+  tbody.innerHTML = "";
+  items.forEach((item, index) => {
+    insertItem(item, index);
+  });
+
+  getTotals();
+}
+
+function getTotals() {
+  const amountIncomes = items
+    .filter((item) => item.type === "Entrada")
+    .map((transaction) => Number(transaction.amount));
+
+  const amountExpenses = items
+    .filter((item) => item.type === "Saída")
+    .map((transaction) => Number(transaction.amount));
+
+  const totalIncomes = amountIncomes
+    .reduce((acc, cur) => acc + cur, 0)
+    .toFixed(2);
+
+  const totalExpenses = Math.abs(
+    amountExpenses.reduce((acc, cur) => acc + cur, 0)
+  ).toFixed(2);
+
+  const totalItems = (totalIncomes - totalExpenses).toFixed(2);
+
+  incomes.innerHTML = totalIncomes;
+  expenses.innerHTML = totalExpenses;
+  total.innerHTML = totalItems;
+}
+
+function minhafuncao (){
+  localStorage
+  return items
+}
+
+function getItensBD (){
+  return JSON.parse(localStorage.getItem("db_items")) ?? [];
+}
+
+// const getItensBD = () => JSON.parse(localStorage.getItem("db_items")) ?? [];
+
+const setItensBD = () =>
+  localStorage.setItem("db_items", JSON.stringify(items));
+
+loadItens();
