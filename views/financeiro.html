@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financeiros</title>
-    <link rel="stylesheet" href="/views/css/estilo.css ">
+    <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet">
@@ -23,7 +23,7 @@
 
         <ul>
             <li class="item-menu">
-            <a href="cadastro.html.html">
+            <a href="cadastro.html">
                 <span class="icon"><i class="bi bi-person-add"></i></span>
                 <span class="txt-link">Registro de funcionario</span>
             </a>
@@ -48,8 +48,8 @@
     <div class="container">
         <h1 class="text-center">Entradas e saídas 2023</h1>
         <div class="row">
-            <div class="col-md-8 mx-auto">
-                <canvas id="meuGrafico" width="400" height="200"></canvas>
+            <div class="col-md-8 mx-auto grafico">
+                <canvas id="meuGrafico" ></canvas>
             </div>
         </div>
     </div>
@@ -57,7 +57,7 @@
     <div class="container mt-5">
         <h1 class="text-center">Margem de lucro</h1>
         <div class="row">
-            <div class="col-md-8 mx-auto">
+            <div class="col-md-8 mx-auto grafico">
                 <canvas id="graficoLucroTotal"></canvas>
             </div>
         </div>
@@ -71,14 +71,14 @@
             datasets: [
                 {
                     label: 'Entradas',
-                    data: [2590, 2824, 3075, 2952, 3238, 3498, 2830, 3190, 1899],
+                    data: [2590, 2824, 3075, 2952, 3238, 3498, 2830, 3190, 1899, 2005],
                     backgroundColor: 'rgba(75, 192, 192, 0.5)',
                     borderColor: 'rgba(75, 192, 192, 1)',
                     borderWidth: 1
                 },
                 {
                     label: 'Saídas',
-                    data: [2521, 2332, 2820, 1984, 2102, 2696, 2631, 2025, 1560],
+                    data: [2521, 2332, 2820, 1984, 2102, 2696, 2631, 2025, 1560, 1753],
                     backgroundColor: 'rgba(255, 99, 132, 0.5)',
                     borderColor: 'rgba(255, 99, 132, 1)',
                     borderWidth: 1
@@ -102,7 +102,7 @@
             }
         });
 
-        var ctx = document.getElementById('graficoLucroTotal').getContext('2d');
+        var ctx2 = document.getElementById('graficoLucroTotal').getContext('2d');
         
         var data = {
             labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
@@ -117,7 +117,7 @@
             ]
         };
 
-        var myChart = new Chart(ctx, {
+        var myChart2 = new Chart(ctx2, {
             type: 'bar',
             data: data,
             options: {
@@ -133,12 +133,6 @@
             }
         });
     </script>
-
-    <!-- Inclua o Bootstrap JavaScript (opcional) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-   
    
 </body>
 </html>

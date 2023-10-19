@@ -14,7 +14,7 @@ const botaoAdicionarProduto = document.querySelector('.janela-conteudo button');
 // Selecione a janela modal
 const janelaEstoque = document.querySelector('.janela-estoque');
 
-// Adicione um evento de clique ao botão "Adicionar produto" para fechar a janela modal
+// Adiciona um evento de clique ao botão "Adicionar produto" para fechar a janela modal
 botaoAdicionarProduto.addEventListener('click', function() {
     janelaEstoque.style.display = 'none'; // Esconde a janela modal
 });
@@ -38,15 +38,17 @@ function adicionarProduto() {
 
     if (nomeProduto && quantidadeProduto >= 0) {
         var tabela = document.getElementById('tabela_estoque');
-        var newRow = tabela.insertRow(tabela.rows.length);
+        var newRow = tabela.insertRow(tabela.rows.length);//Insere uma nova linha na tabela.
 
+        // Cria células para nome do produto, quantidade e a opção de excluir
         var cell1 = newRow.insertCell(0);
-        cell1.classList.add("nome-produto");
+        cell1.classList.add("nome-produto");//Adiciona a classe para a celula 
         var cell2 = newRow.insertCell(1);
         cell2.classList.add("quantidade");
         var cell3 = newRow.insertCell(2);
         cell3.classList.add("excluir-produto");
 
+        //Definen o conteudo das celulas
         cell1.innerHTML = nomeProduto;
         cell2.innerHTML = '<input class="table-content centralizado" type="number" value="' + quantidadeProduto + '" min="0">';
         cell3.innerHTML = '<button><img src="img/x.png" alt="x" class="x"></button>';
@@ -59,14 +61,15 @@ function adicionarProduto() {
 botaoAdicionarProduto.addEventListener("click", adicionarProduto);
 
 function excluirProduto(button) {
-    var row = button.parentNode.parentNode;
-    row.parentNode.removeChild(row);
+    var row = button.parentNode.parentNode;//Acessa o elemento pai do pai do botao (a linha da tabela)
+    row.parentNode.removeChild(row);//Acessa a tabela (elemento pai da linha) e remove o elemento filho (linha)
 }
 
 const botao_excluir = document.querySelectorAll(".excluir-produto-button");
-botao_excluir.forEach(function(excluir){
-    excluir.addEventListener("click", function() {
-        excluirProduto(this);
+//Itera sobre todos os botoes
+botao_excluir.forEach(function(excluir){//Funcao anonima que recebe um botao como parametro
+    excluir.addEventListener("click", function() {//Ouvinte do evento de click
+        excluirProduto(this);//Passa o botao como parametro para a funcao
     });
 });
 
