@@ -5,6 +5,10 @@
     font-family: 'poppins', sans-serif;
     outline: none;
   }
+
+  #btnNew{
+    background-color: #0d192b;
+  }
   
   body {
     height: 100vh;
