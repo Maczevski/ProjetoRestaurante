@@ -229,6 +229,9 @@ div#prato1{
 
 .menu ul li a:hover {
     background-color:#0c5149;
+    border-radius: 15px;
+    width: 60%;
+    align-items: center;
 }
 /* Estilo para o botão "Categorias" */
 .btn-categorias {
@@ -252,9 +255,11 @@ div#prato1{
 }
 .botao-fazer-pedido-pequeno{
     background-color: #0a8967;
+    border: none;
 }
 .botao-fazer-pedido-grande{
     background-color: #09c184;
+    border: none;
 }
 /* Estilo para o fundo escurecido ao abrir o modal */
 .modal-backdrop {
