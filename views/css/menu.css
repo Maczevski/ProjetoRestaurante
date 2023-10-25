@@ -18,9 +18,6 @@ body{
     color: #0a8967;
 }
 
-.sair{
-
-}
 .left-image{
     width: 40vw;
 }
@@ -74,4 +71,21 @@ body{
     margin-top: 100px;
 }
 
+.menu-button{
+    border: none;
+    border-radius: 15px;
+    margin: 0;
+    width: 10vw;
+    height: 10vh;
+    background-color: #180d2b;
+    color: #07f9a2;
+    cursor: pointer;
+    transition: 100ms;
+}
 
+.menu-button:hover{
+    background-color: #0a8967;
+    transform: translateY(5px);
+    /* width: 12vw;
+    height: 12vh; */
+}

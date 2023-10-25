@@ -1,0 +1,307 @@
+/*Geral*/
+/*Barra de rolagem*/
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(28, 7, 48);
+}
+
+hr.claro {
+    color: #b3a9a1;
+    background-color: #b3a9a1;
+    height: 1px;
+    width: 50px;
+    margin-top: 90px;
+}
+
+hr.escuro {
+    color: #353130;
+    background-color: #353130;
+    height: 1px;
+    width: 50px;
+    margin-top: 90px;
+}
+
+@media (max-width: 996px){ 
+    .col-lg-6.reverse{
+    order: 2;
+    }
+}
+
+a, a:visited, a:focus, a:active{ text-decoration: none; color: inherit; }
+a:hover { color: #ffffff; } 
+
+/*Cardárpio Pagina Inicial*/
+div#image1{
+    background-image: url(../img/prato-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+}
+
+.titulo{
+    font-family: monospace;
+    line-height: 10px;
+    text-align: center;
+}
+
+.btn-outline-dark:hover{
+    background-color: #d32d04;
+}
+
+/*Seção História*/
+div#image2{
+    background-image: url(../img/familia.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+}
+
+div#image5{
+    background-image: url(../img/familia-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+}
+
+/*Seção contato*/
+div#image3{
+    background-image: url(../img/prato-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+}
+
+div#image4{
+    background-image: url(../img/prato-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+}
+
+/*Rodapé*/
+div#footer{
+    font-family: monospace;
+    color: #e3e2e0;
+    position: relative;
+    height: 60px;
+}
+
+div#textofooter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Cardápio Banner */
+div#cardapiobanner {
+    background-image: url(../img/cardapio/IMAGE_2.jpg); /* Substitua "nova-imagem.jpg" pelo caminho da nova imagem */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 230px;
+    color: #e3e2e0;
+    font-family: monospace;
+    position: relative;
+    text-align: center;
+}
+
+
+
+div#textocardapiobanner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Título*/
+div#titutloalmocooujantar{
+    color: #e3e2e0;
+    position: relative;
+    height: 60px;
+}
+
+div#titutloalmocooujantar2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Pratos*/
+div#pratodiv{
+    color: #353130;
+    position: relative;
+    margin-top: 15px;
+    margin-right: 12px;
+    height: 200px;
+}
+
+div#pratodiv2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+div#prato1{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 12px;
+    height: 200px;
+}
+.botao-fazer-pedido {
+    background-color: #FF5733;
+    color: #FFFFFF;
+    font-size: 1.5em; /* Tamanho da fonte baseado na largura das divs */
+    padding: 0.5em 1em; /* Espaçamento interno baseado na largura das divs */
+    border-radius: 5px;
+    width: auto; /* Largura automática para ajustar ao conteúdo do botão */
+}
+/*nav bar menu*/
+.navbar{
+    width: 100%;  
+    background-color: #0d192b;
+    height: 70px;
+    position: fixed;
+    top: 0; /* Fixar no topo da tela */
+    left: 0; /* Fixar no lado esquerdo da tela */
+    width: 100%; /* Largura total */
+    color: white;
+    z-index: 1000; 
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color:#0c5149;
+    border-radius: 10px;
+    min-width: 80px;
+    z-index: 1;
+    text-align: left;
+    color: #F4F4F4;
+}
+
+
+/* Estilo do menu lateral */
+.menu {
+    margin-top: 70px;
+    width: 250px;
+    height: 100%;
+    background-color:#0a8967;
+    position: fixed;
+    overflow: auto;
+    z-index: 999;
+    transition: transform 0.3s ease-in-out;
+}
+.menu-hidden {
+    transform: translateX(-250px); /* Esconde o menu deslocando-o para a esquerda */
+  }
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.menu ul li a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color:#0c5149;
+}
+/* Estilo para o botão "Categorias" */
+.btn-categorias {
+    background-color:#09c184; /* Cor de fundo verde */
+    color: #09c184; /* Cor do texto em branco */
+    border: none; /* Remover a borda */
+    border-radius: 5px; /* Raio das bordas */
+    padding: 10px 20px; /* Espaçamento interno */
+}
+
+/* Estilo para o botão "Categorias" quando hover (opcional) */
+.btn-categorias:hover {
+    background-color: #0a8967; /* Cor de fundo verde mais escura ao passar o mouse */
+}
+
+
+/* Estilo do conteúdo principal */
+.conteudo {
+    margin-left: 250px;
+    padding: 20px;
+}
+.botao-fazer-pedido-pequeno{
+    background-color: #0a8967;
+}
+.botao-fazer-pedido-grande{
+    background-color: #09c184;
+}
+/* Estilo para o fundo escurecido ao abrir o modal */
+.modal-backdrop {
+    background-color: rgba(0, 128, 0, 0.5) !important; /* Fundo escurecido em tom de verde */
+}
+.botao-excluir{
+    background-color:#09c184;
+    color:#F4F4F4 ;
+}
+.botao-editar{
+    background-color: #0c5149;
+    color: #F4F4F4;
+}
+
+/* Estilo para o modal */
+.modal {
+background-color: #081324;
+}
+
+/* Estilo para o título do modal */
+.modal-title {
+    font-size: 1.5rem; /* Tamanho da fonte do título */
+    color: #081324; /* Cor do título em verde escuro */
+}
+
+/* Estilo para o botão Fechar */
+.close {
+    font-size: 1.5rem; /* Tamanho da fonte do botão Fechar */
+    color: #081324; /* Cor do ícone do botão Fechar em verde escuro */
+}
+
+/* Estilo para os botões dentro do modal */
+.btn {
+    font-size: 1rem; /* Tamanho da fonte dos botões */
+    background-color: #081324; /* Cor de fundo dos botões em verde escuro */
+    border-color: #081324; /* Cor da borda dos botões em verde escuro */
+    color: #fff; /* Cor do texto dos botões em branco */
+}
+
+/* Estilo para o campo de entrada de texto */
+.form-control {
+    border: 1px solid #081324; /* Cor da borda do campo de entrada em verde escuro */
+    border-radius: 5px; /* Raio das bordas do campo de entrada */
+}
+
+/* Estilo para o campo de observações */
+#observacoes {
+    resize: vertical; /* Permitir redimensionamento vertical da área de texto */
+    border: 1px solid #081324; /* Cor da borda do campo de observações em verde escuro */
+}
