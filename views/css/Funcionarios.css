@@ -29,6 +29,8 @@ img{
     width:90%;
     margin-top: 15%;
 }
+
+
 .navbar{
     width: 100%;  
     padding: 20px 0;
@@ -89,7 +91,7 @@ img{
 }
 
 .dropdown-content a:hover {
-    background-color: #081324;
+    background-color: #d1dae9;
     width: 100%;
     border-radius: 5px;
 }
@@ -160,7 +162,8 @@ table {
 }
 
 thead {
-  background-color: whitesmoke;
+  background-color: #0c5149;
+  color: aliceblue;
 }
 
 tr {
@@ -274,7 +277,7 @@ tbody tr td.acao {
   padding: 5px 10px; 
   width: 100%;
   border: none;
-  background-color: rgb(57, 57, 226);
+  background-color: #0c5149;
   color: white;
 }
 
@@ -324,7 +327,7 @@ td button i:first-child {
     z-index: 1000;
     display: flex;
     justify-content: center;
-    align-items: center; /* Remova a segunda ocorrência de "align-items: center;" */
+    align-items: center; 
 }
 
 .info-content {
