@@ -241,6 +241,7 @@ tbody tr td.acao {
   z-index: 999;
   align-items: center;
   justify-content: center;
+  margin-top: 25px;
 }
 
 .modal {
@@ -314,10 +315,9 @@ td button i:first-child {
   margin-right: 10px;
 }
 
-
 /* Estilos para o modal de informações adicionais */
 .info-modal {
-    display: none;
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -325,9 +325,8 @@ td button i:first-child {
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
     z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+    justify-content: center; /* Centralize horizontalmente */
+    align-items: center; /* Centralize verticalmente */
 }
 
 .info-content {
@@ -338,6 +337,7 @@ td button i:first-child {
     max-width: 80%;
     text-align: left;
     position: relative;
+    align-items:  center;
 }
 
 .close-info-modal {
@@ -349,7 +349,6 @@ td button i:first-child {
     color: #333;
 }
 
-/* Estilize o conteúdo do modal de informações adicionais conforme necessário */
 .info-content p {
     margin-bottom: 10px;
 }

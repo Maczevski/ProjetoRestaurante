@@ -3,7 +3,11 @@ const tbody = document.querySelector('tbody')
 const sNome = document.querySelector('#m-nome')
 const sFuncao = document.querySelector('#m-funcao')
 const sSalario = document.querySelector('#m-salario')
+const scpf= document.querySelector('#m-cpf')
+const stelefone = document.querySelector('#m-telefone')
 const btnSalvar = document.querySelector('#btnSalvar')
+const scarteira = document.querySelector('#m-carteira')
+
 
 let itens
 let id
@@ -21,11 +25,17 @@ function openModal(edit = false, index = 0) {
     sNome.value = itens[index].nome
     sFuncao.value = itens[index].funcao
     sSalario.value = itens[index].salario
+    scpf.value = itens[index].cpf
+    stelefone.value = itens[index].telefone
+    scarteira.value = itens[index].carteira
     id = index
   } else {
     sNome.value = ''
     sFuncao.value = ''
     sSalario.value = ''
+    scpf.value = ''
+    stelefone.value = ''
+    scarteira.value = ''
   }
   
 }
@@ -120,6 +130,9 @@ function openInfoModal(index) {
 function closeInfoModal() {
     const infoModal = document.querySelector('.info-modal');
     infoModal.style.display = 'none';
+
+
+    
 }
 
 
