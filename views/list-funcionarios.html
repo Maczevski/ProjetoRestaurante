@@ -64,12 +64,49 @@
 
                 <label for="m-salario">Salário</label>
                 <input id="m-salario" type="number" required />
+
+                <label for="m-cpf">CPF</label>
+                <input id="m-cpf" type="text" required />
+
+                <label for="m-carteira">Número da carteira de trabalho</label>
+                <input id="m-carteira" type="text" required />
+
+                <label for="m-telefone">Telefone</label>
+                <input id="m-telefone" type="text" required />
+
+                <label for="genero">Gênero</label>
+                <select class="form-select" id="genero" required>
+                    <option value="Mulher">Mulher</option>
+                    <option value="Homem">Homem</option>
+                    <option value="Outro">Outro</option>
+                </select>
+
                 <button id="btnSalvar">Salvar</button>
             </form>
             </div>
+        </div> 
+    
+        <div class="info-modal"  style="display: none;" >
+            <div class="info-content">
+                <span class="close-info-modal" onclick="closeInfoModal()">&times;</span>
+                <div id="info-content">
+                    <h2>Informações do Funcionário</h2>
+                    <p><strong>Nome:</strong> <span id="info-nome"></span></p>
+                    <p><strong>Função:</strong> <span id="info-funcao"></span></p>
+                    <p><strong>Salário:</strong> R$ <span id="info-salario"></span></p>
+                    <p><strong>CPF:</strong> <span id="info-cpf"></span></p>
+                    <p><strong>Número da Carteira de Trabalho:</strong> <span id="info-carteira"></span></p>
+                    <p><strong>Telefone:</strong> <span id="info-telefone"></span></p>
+                    <p><strong>Gênero:</strong> <span id="info-genero"></span></p>
+                    <!-- Adicione mais campos aqui conforme necessário -->
+                </div>
+            </div>
         </div>
+        
+        
     
         </div>
+        
     <script type="text/javascript" src="\views\js\list-funci.js"></script>
 </body>
 </html>

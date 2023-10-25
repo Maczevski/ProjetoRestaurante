@@ -56,8 +56,8 @@ function insertItem(item, index) {
         </i></button>
     </td>
     <td class="acao">
-        <a href="#" target="_blank"><i class="fa-solid fa-plus"></i></a>
-    </td>
+    <a href="#" onclick="openInfoModal(${index})"><i class="fa-solid fa-plus"></i></a>
+</td>
 
   `
   tbody.appendChild(tr)
@@ -99,3 +99,27 @@ const getItensBD = () => JSON.parse(localStorage.getItem('dbfunc')) ?? []
 const setItensBD = () => localStorage.setItem('dbfunc', JSON.stringify(itens))
 
 loadItens()
+
+//
+function openInfoModal(index) {
+    const infoModal = document.querySelector('.info-modal');
+    const item = itens[index];
+
+    document.getElementById('info-nome').textContent = item.nome;
+    document.getElementById('info-funcao').textContent = item.funcao;
+    document.getElementById('info-salario').textContent = `R$ ${item.salario}`;
+    document.getElementById('info-cpf').textContent = item.cpf;
+    document.getElementById('info-carteira').textContent = item.carteira;
+    document.getElementById('info-telefone').textContent = item.telefone;
+    document.getElementById('info-genero').textContent = item.genero;
+
+    infoModal.style.display = 'block';
+}
+
+// Função para fechar o modal com informações adicionais
+function closeInfoModal() {
+    const infoModal = document.querySelector('.info-modal');
+    infoModal.style.display = 'none';
+}
+
+

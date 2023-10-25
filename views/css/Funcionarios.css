@@ -310,3 +310,53 @@ td button i {
 td button i:first-child {
   margin-right: 10px;
 }
+
+
+/* Estilos para o modal de informações adicionais */
+.info-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Remova a segunda ocorrência de "align-items: center;" */
+}
+
+.info-content {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    text-align: left;
+    position: relative;
+}
+
+.close-info-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Estilize o conteúdo do modal de informações adicionais conforme necessário */
+.info-content p {
+    margin-bottom: 10px;
+}
+
+.info-content button {
+    padding: 5px 10px;
+    background-color: #0c5149;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
