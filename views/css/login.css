@@ -129,3 +129,10 @@ body *{
     }
 
 }
+
+.anchor{
+    text-decoration: none;
+    color: rgb(201, 201, 201);
+    font-size: smaller;
+    margin-left: 10px;
+}

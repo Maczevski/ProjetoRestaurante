@@ -30,7 +30,8 @@ function openModal(edit = false, index = 0) {
         scpf.value = itens[index].cpf;
         stelefone.value = itens[index].telefone;
         scarteira.value = itens[index].carteira;
-        sGenero.value = itens[index].genero;
+        generoSelect.value = itens[index].genero;
+         generoSelect.value = 'Mulher';
         id = index;
     }else {
         sNome.value = '';
