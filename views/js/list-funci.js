@@ -9,6 +9,7 @@ const btnSalvar = document.querySelector('#btnSalvar');
 const scarteira = document.querySelector('#m-carteira');
 const sGenero = document.querySelector('#m-genero');
 
+
 let itens;
 let id;
 
