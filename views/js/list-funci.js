@@ -136,7 +136,8 @@ function openInfoModal(index) {
     document.getElementById('info-cpf').textContent = item.cpf;
     document.getElementById('info-carteira').textContent = item.carteira;
     document.getElementById('info-telefone').textContent = item.telefone;
-    document.getElementById('info-genero').textContent = item.Genero; 
+
+    const generoSelect = document.getElementById('m-genero');
 
     infoModal.style.display = 'block';
 }

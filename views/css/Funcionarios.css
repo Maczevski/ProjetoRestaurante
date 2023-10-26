@@ -329,8 +329,8 @@ td button i:first-child {
   top: 53%;
   left: 62%;
   transform: translate(-50%, -50%);
-  background-color: #0d192b !important; 
-  color: #f7fffc;
+  background-color: #ffffff !important; 
+  color: #000000;
   padding: 20px;
   border-radius: 5px;
   width: 100%;
@@ -350,5 +350,5 @@ td button i:first-child {
   right: 10px;
   cursor: pointer;
   font-size: 24px;
-  color: #f7fffc;
+  color: #000000;
 }
