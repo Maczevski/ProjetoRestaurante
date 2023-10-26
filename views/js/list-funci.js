@@ -32,14 +32,14 @@ function openModal(edit = false, index = 0) {
         generoSelect.value = itens[index].genero;
          generoSelect.value = 'Mulher';
         id = index;
-    } else {
+    }else {
         sNome.value = '';
         sFuncao.value = '';
         sSalario.value = '';
         scpf.value = '';
         stelefone.value = '';
         scarteira.value = '';
-        
+        sGenero.value = '';
         id = undefined;
     }
 }
@@ -90,6 +90,7 @@ btnSalvar.onclick = e => {
             cpf: scpf.value,
             carteira: scarteira.value,
             telefone: stelefone.value,
+            genero: sGenero.value
         };
     } else {
         itens.push({
@@ -99,6 +100,7 @@ btnSalvar.onclick = e => {
             cpf: scpf.value,
             carteira: scarteira.value,
             telefone: stelefone.value,
+            genero: sGenero.value
         });
     }
 
@@ -135,7 +137,8 @@ function openInfoModal(index) {
     document.getElementById('info-cpf').textContent = item.cpf;
     document.getElementById('info-carteira').textContent = item.carteira;
     document.getElementById('info-telefone').textContent = item.telefone;
-    document.getElementById('info-genero').textContent = item.genero; 
+
+    const generoSelect = document.getElementById('m-genero');
 
     infoModal.style.display = 'block';
 }
