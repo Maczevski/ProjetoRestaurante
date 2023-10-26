@@ -65,7 +65,7 @@ function insertItem(item, index) {
             <button onclick="editItem(${index})"><i class="fa-solid fa-file-pen"></i></button>
         </td>
         <td class="acao">
-            <button onclick="deleteItem(${index})"><i class="fa-solid fa-user-slash"></i></button>
+            <button onclick="deleteItem(${index})"><i class="fa-solid fa-user-slash" style="color: red"></i></button>
         </td>
         <td class="acao">
             <a href="#" onclick="openInfoModal(${index})"><i class="fa-solid fa-plus"></i></a>
@@ -126,20 +126,20 @@ function getItensBD() {
 function setItensBD() {
     localStorage.setItem('dbfunc', JSON.stringify(itens));
 }
-
 function openInfoModal(index) {
     const infoModal = document.querySelector('.info-modal');
     const item = itens[index];
 
     document.getElementById('info-nome').textContent = item.nome;
     document.getElementById('info-funcao').textContent = item.funcao;
-    document.getElementById('info-salario').textContent = `${item.salario}`;
+    document.getElementById('info-salario').textContent = `R$ ${item.salario}`;
     document.getElementById('info-cpf').textContent = item.cpf;
     document.getElementById('info-carteira').textContent = item.carteira;
     document.getElementById('info-telefone').textContent = item.telefone;
 
-    const generoSelect = document.getElementById('m-genero');
-
+    const infoGenero = document.getElementById('info-genero');
+    infoGenero.textContent = item.genero;
+    
     infoModal.style.display = 'block';
 }
 
