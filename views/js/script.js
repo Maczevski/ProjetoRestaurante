@@ -35,6 +35,9 @@ window.onclick = function(event) {
 function adicionarProduto() {
     var nomeProduto = document.getElementById('campoNome').value;
     var quantidadeProduto = document.getElementById('campoQntd').value;
+    if (quantidadeProduto === '' || quantidadeProduto <= 0){
+        
+    }
 
     if (nomeProduto && quantidadeProduto >= 0) {
         var tabela = document.getElementById('tabela_estoque');
@@ -51,15 +54,19 @@ function adicionarProduto() {
         cell2.innerHTML = '<input class="table-content centralizado" type="number" value="' + quantidadeProduto + '" min="0">';
         cell3.innerHTML = '<button class="excluir-produto-button"><img src="img/x.png" alt="x" class="x"></button>';
 
+        // Acessa os dados do localstorage ou cria um array vazio
         let produtos = JSON.parse(localStorage.getItem("produtos")) || [];
 
+        // Adiciona o o nome e a quantidade do prooduto no final do array
         produtos.push({
             nome: nomeProduto,
             quantidade: quantidadeProduto
         });
 
+        // Passa o array de produtos como string para o localStorage
         localStorage.setItem("produtos", JSON.stringify(produtos));
 
+        // Limpa os dados do campo de entrada
         document.getElementById('campoNome').value = '';
         document.getElementById('campoQntd').value = '';
 
@@ -78,10 +85,12 @@ function adicionarProduto() {
     }
 }
 
+// Quando o documento é carregado
 document.addEventListener("DOMContentLoaded", function () {
     let produtos = JSON.parse(localStorage.getItem("produtos")) || [];
     const tabela = document.getElementById('tabela_estoque');
 
+    // Percorre o array de produtos e insere novas linhas na tabela
     for (const produto of produtos) {
         const newRow = tabela.insertRow(tabela.rows.length);
 

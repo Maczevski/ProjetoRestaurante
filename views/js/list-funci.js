@@ -28,7 +28,7 @@ function openModal(edit = false, index = 0) {
         stelefone.value = itens[index].telefone;
         scarteira.value = itens[index].carteira;
         generoSelect.value = itens[index].genero;
-        generoSelect.value = 'Mulher';
+        // generoSelect.value = 'Mulher';
         id = index;
     } else {
         sNome.value = '';
@@ -128,7 +128,7 @@ function openInfoModal(index) {
 
     document.getElementById('info-nome').textContent = item.nome;
     document.getElementById('info-funcao').textContent = item.funcao;
-    document.getElementById('info-salario').textContent = `R$ ${item.salario}`;
+    document.getElementById('info-salario').textContent = `${item.salario}`;
     document.getElementById('info-cpf').textContent = item.cpf;
     document.getElementById('info-carteira').textContent = item.carteira;
     document.getElementById('info-telefone').textContent = item.telefone;
