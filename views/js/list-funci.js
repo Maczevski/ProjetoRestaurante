@@ -28,7 +28,7 @@ function openModal(edit = false, index = 0) {
         stelefone.value = itens[index].telefone;
         scarteira.value = itens[index].carteira;
         generoSelect.value = itens[index].genero;
-        generoSelect.value = 'Mulher';
+        generoSelect.value = '';
         id = index;
     } else {
         sNome.value = '';

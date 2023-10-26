@@ -326,6 +326,7 @@ td button i:first-child {
 
 /* Estilize o modal */
 .info-modal {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -337,6 +338,7 @@ td button i:first-child {
   width: 100%;
   max-width: 600px;
   height: 70vh;
+  z-index: 100; /* Defina um valor alto para o z-index */
 }
 
 .active .info-modal {
@@ -344,4 +346,23 @@ td button i:first-child {
 }
 .active .info-modal {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adicione a sombra apenas quando o modal está ativo */
+}
+
+.info-modal.active {
+  display: block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.info-modal {
+  /* ... outras propriedades ... */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.close-info-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #f7fffc;
 }
