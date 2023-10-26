@@ -323,25 +323,32 @@ td button i {
 td button i:first-child {
   margin-right: 10px;
 }
-
-/* Estilize o modal */
 .info-modal {
+  display: none;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 53%;
+  left: 62%;
   transform: translate(-50%, -50%);
-  background-color: #0d192b;
+  background-color: #0d192b !important; 
   color: #f7fffc;
   padding: 20px;
   border-radius: 5px;
   width: 100%;
-  max-width: 600px;
-  height: 70vh;
+  max-width: 1000px;
+  height: 81vh;
+  z-index: 500; 
 }
 
-.active .info-modal {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+.info-modal.active {
+  display: block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) !important;
 }
-.active .info-modal {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adicione a sombra apenas quando o modal está ativo */
+
+.close-info-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #f7fffc;
 }

@@ -199,4 +199,8 @@
     text-align: center;
   }
   
-  
+  .image-container {
+    position: fixed;
+    bottom: 0;
+    right: 0; /* Alterado de "left" para "right" */
+  }

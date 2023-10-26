@@ -7,9 +7,11 @@ const scpf = document.querySelector('#m-cpf');
 const stelefone = document.querySelector('#m-telefone');
 const btnSalvar = document.querySelector('#btnSalvar');
 const scarteira = document.querySelector('#m-carteira');
-const generoSelect = document.querySelector('#genero');
+const sGenero = document.querySelector('#m-genero');
+
 let itens;
 let id;
+
 
 function openModal(edit = false, index = 0) {
     modal.classList.add('active');
@@ -37,6 +39,7 @@ function openModal(edit = false, index = 0) {
         scpf.value = '';
         stelefone.value = '';
         scarteira.value = '';
+        
         id = undefined;
     }
 }
