@@ -75,7 +75,8 @@ img{
     padding: 20px;
     color:#0a8967;
     text-decoration: none;
-}.dropdown-content {
+}
+.dropdown-content {
     display: none;
     position: absolute;
     background-color:#0c5149;
